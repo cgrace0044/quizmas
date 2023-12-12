@@ -1,9 +1,18 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300;400&family=Oswald:wght@300;600&display=swap');
+
 /* --------- Global style */
 
 body {
-    background-color: white;
-    font-family: "Raleway", sans-serif;
-    color: #445361;
+    background-color: green;
+    background-size: no-repeat center center/cover;
+    background-position: 75%;
+    padding: 40px 10% 0 10%;
+    flex-grow: 1;
+    position: relative;
+    z-index: 0;
+    font-family: "montserrat", sans-serif;
+    color: white;
     text-align: center;
 }
 
@@ -17,7 +26,7 @@ body {
 /* --------- Game layout */
 
 .game-area {
-    background-color: #E6ECF0;
+    background-color: white;
     box-sizing: border-box;
     width: 85%;
     height: 65vh;
@@ -37,6 +46,10 @@ body {
     padding: 50px 0;
 }
 
+#question {
+    color: black;
+}
+
 .score-area {
     margin: 5px auto;
     width: 60%;
@@ -44,12 +57,10 @@ body {
 }
 
 #score {
-    color: green;
     font-weight: bold;
 }
 
 #incorrect {
-    color: red;
     font-weight: bold;
 }
 
@@ -63,16 +74,19 @@ body {
 .btn {
     width: 220px;
     height: 60px;
-    font-family: "Raleway", sans-serif;
     letter-spacing: 1.2px;
-    color: black;
+    color: white;
     justify-content: center;
     align-items: center;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
 }
 
 #answer-buttons {
     display: grid;
     grid-template-columns: repeat(2, auto);
+    justify-content: center;
     gap: 10px;
     margin: 20px 0;
 }
