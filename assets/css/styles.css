@@ -26,6 +26,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 1%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
 }
 
 .question-area {
@@ -62,10 +64,20 @@ body {
     width: 220px;
     height: 60px;
     font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
     letter-spacing: 1.2px;
-    color: white;
+    color: black;
+    justify-content: center;
+    align-items: center;
 }
+
+#answer-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+
 
 .btn:focus {
     outline: none;
