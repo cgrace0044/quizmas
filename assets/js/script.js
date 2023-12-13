@@ -284,6 +284,87 @@ const questions = [
             { text: 'MMMMIII', correct: false },
         ]
     },
+    {
+        question: "Which currency did Croatia adopt on 1 January 2023?",
+        answers: [
+            { text: 'The Euro', correct: true },
+            { text: 'Pound', correct: false },
+            { text: 'Dollar', correct: false },
+            { text: 'Baht', correct: false },
+        ]
+    },
+    {
+        question: "In early August 2023 wildfires broke out in the US state of Hawaii, predominantly on which island?",
+        answers: [
+            { text: 'Maui', correct: true },
+            { text: 'Kauai', correct: false },
+            { text: 'Lanai', correct: false },
+            { text: 'Oahu', correct: false },
+        ]
+    },
+    {
+        question: "After a 35 year run and more than 13,000 performances on Broadway which musical closed on February 18 2023?",
+        answers: [
+            { text: 'Chicago', correct: false },
+            { text: 'Wicked', correct: false },
+            { text: 'Rent', correct: false },
+            { text: 'The Phantom of the Opera', correct: true },
+        ]
+    },
+    {
+        question: "Which actor from the sitcom Friends passed away on the 28th of October 2023?",
+        answers: [
+            { text: 'Paul Rudd', correct: false },
+            { text: 'David Schwimmer', correct: false },
+            { text: 'Matt LeBlanc', correct: false },
+            { text: 'Matthew Perry', correct: true },
+        ]
+    },
+    {
+        question: "In which range of mountains was the earthquake of the 8th of September 2023 in Morocco?",
+        answers: [
+            { text: 'Kunlun Mountains', correct: false },
+            { text: 'Carpathian Mountains', correct: false },
+            { text: 'The Atlas Mountains', correct: true },
+            { text: 'Ural Mountains', correct: false },
+        ]
+    },
+    {
+        question: "What is the 2023 Highest Grossing movie worldwide?",
+        answers: [
+            { text: 'Oppenheimer', correct: false },
+            { text: 'All Quiet on the Western Front', correct: false },
+            { text: 'Barbie', correct: true },
+            { text: 'Everything Everywhere All At Once', correct: false },
+        ]
+    },
+    {
+        question: "Born in Rosario and one of the most searched people on Google in 2023. Who is it?",
+        answers: [
+            { text: 'Lionel Messi', correct: true },
+            { text: 'Juan Martin del Potro', correct: false },
+            { text: 'Cristiano Ronaldo', correct: false },
+            { text: 'Neymar da Silva Santos Junior', correct: false },
+        ]
+    },
+    {
+        question: "Who won the copyright infringement case over the song Thinking Out Loud?",
+        answers: [
+            { text: 'Ed Sheeran', correct: true },
+            { text: 'Dermot Kennedy', correct: false },
+            { text: 'Lewis Capaldi', correct: false },
+            { text: 'Adele', correct: false },
+        ]
+    },
+    {
+        question: "Due to liquidity issues, both First Republic Bank and which other US Financial Institution utterly collapsed in 2023?",
+        answers: [
+            { text: 'Citigroup', correct: false },
+            { text: 'US Bankcorp', correct: false },
+            { text: 'Wells Fargo', correct: false },
+            { text: 'Silicon Valley Bank', correct: true },
+        ]
+    },
 ];
 let currentQuestionIndex = 0;
 let score = 0;
