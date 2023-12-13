@@ -95,6 +95,96 @@ const questions = [
             { text: 'India', correct: true },
         ]
     },
+    {
+        question: "What did Rihanna reveal in her performance of the halftime show at the Super Bowl?",
+        answers: [
+            { text: 'The Start Date of her Tour', correct: false },
+            { text: 'The Name of her New Albumn', correct: false },
+            { text: 'The Name of her Baby', correct: false },
+            { text: 'Her Pregnancy', correct: true },
+        ]
+    },
+    {
+        question: "Which film won the 2023 Oscar for Best Picture?",
+        answers: [
+            { text: 'All Quiet On The Western Front', correct: false },
+            { text: 'Oppenheimer', correct: false },
+            { text: 'Everything Everywhere All At Once', correct: true },
+            { text: 'Barbie', correct: false },
+        ]
+    },
+    {
+        question: "What was the name of Kourtney Kardashian and Travis Barkers son born in December 2023?",
+        answers: [
+            { text: 'Parade Barker', correct: false },
+            { text: 'Rocky 13 Barker', correct: true },
+            { text: 'Apple', correct: false },
+            { text: 'Adam', correct: false },
+        ]
+    },
+    {
+        question: "In the Netflix documentary Beckham what car did Victoria Beckham admit that her Dad would drive her to school in whist claiming her family was working class?",
+        answers: [
+            { text: 'BMW', correct: false },
+            { text: 'Rolls Royce', correct: true },
+            { text: 'Bentley', correct: false },
+            { text: 'Lamborghini', correct: false },
+        ]
+    },
+    {
+        question: "What is the name of Beyonces daughter who accompanied her during the 2023 International Renaissance Tour?",
+        answers: [
+            { text: 'Blue Ivy Carter', correct: true },
+            { text: 'Anabella', correct: false },
+            { text: 'Carter Lee', correct: false },
+            { text: 'Isabella', correct: false },
+        ]
+    },
+    {
+        question: "Which former Pope was buried on the fifth of January 2023?",
+        answers: [
+            { text: 'Blue Ivy Carter', correct: false },
+            { text: 'John Paul II', correct: false },
+            { text: 'John Paul I', correct: true },
+            { text: 'Paul VI', correct: false },
+        ]
+    },
+    {
+        question: "What was the date of Kind Charles Coronation?",
+        answers: [
+            { text: 'June 5th 2023', correct: false },
+            { text: 'February 4th 2023', correct: false },
+            { text: 'April 10th 2023', correct: false },
+            { text: 'May 6th 2023', correct: true },
+        ]
+    },
+    {
+        question: "Which country won the rugby world cup 2023?",
+        answers: [
+            { text: 'France', correct: false },
+            { text: 'South Africa', correct: true },
+            { text: 'England', correct: false },
+            { text: 'New Zealand', correct: false },
+        ]
+    },
+    {
+        question: "Which film won Best Picture in the Baftas?",
+        answers: [
+            { text: 'Everything Everywhere All At Once', correct: false },
+            { text: 'All Quiet on the Western Front', correct: true },
+            { text: 'Oppenheimer', correct: false },
+            { text: 'Barbie', correct: false },
+        ]
+    },
+    {
+        question: "The Kings Coronation was planned using which secret code name?",
+        answers: [
+            { text: 'Operation Ruby Slipper', correct: false },
+            { text: 'Operation Diamond Crown', correct: false },
+            { text: 'Operation Golden Orb', correct: true },
+            { text: 'Operation Silver Sleigh', correct: false },
+        ]
+    },
 ];
 let currentQuestionIndex = 0;
 let score = 0;
