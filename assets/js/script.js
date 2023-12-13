@@ -23,6 +23,78 @@ const questions = [
             { text: 'Disk', correct: false },
         ]
     },
+    {
+        question: "The Barbie movie was released in cinemas on June 21st. What other blockbuster was released on the same day?",
+        answers: [
+            { text: 'Killers of the Flower Moon', correct: false },
+            { text: 'John Wick: Chapter 4', correct: false },
+            { text: 'Past Lives', correct: false },
+            { text: 'Oppenheimer', correct: true },
+        ]
+    },
+    {
+        question: "What was Twitter renamed to at the end of July?",
+        answers: [
+            { text: 'Y', correct: false },
+            { text: 'X', correct: true },
+            { text: 'W', correct: false },
+            { text: 'Z', correct: false },
+        ]
+    },
+    {
+        question: "Which two countries co-hosted the 2023 Fifa Womens World Cup?",
+        answers: [
+            { text: 'Australia and New Zealand', correct: true },
+            { text: 'Spain and Portugal', correct: false },
+            { text: 'Korea and Japan', correct: false },
+            { text: 'France and Belgium', correct: false },
+        ]
+    },
+    {
+        question: "What was the most watched English language series on Netflix in 2023?",
+        answers: [
+            { text: 'Stranger Things 4', correct: false },
+            { text: 'Wednesday', correct: true },
+            { text: 'The Witcher Season 1', correct: false },
+            { text: 'Queen Charlotte A Bridgerton Story', correct: false },
+        ]
+    },
+    {
+        question: "What was the name of Taylor Swifts 2023 sellout tour?",
+        answers: [
+            { text: 'Renaissance', correct: false },
+            { text: 'The Eras Tour', correct: true },
+            { text: 'Music of the Spheres Tour', correct: false },
+            { text: 'Love on Tour', correct: false },
+        ]
+    },
+    {
+        question: "Which city was the host of the 2023 Eurovision Song Contest?",
+        answers: [
+            { text: 'Stockholm', correct: false },
+            { text: 'Oslo', correct: false },
+            { text: 'Liverpool', correct: true },
+            { text: 'Sydney', correct: false },
+        ]
+    },
+    {
+        question: "What faux animal head did Kylie Jenner wear to Paris fashion week?",
+        answers: [
+            { text: 'Tiger', correct: false },
+            { text: 'Lion', correct: true },
+            { text: 'Giraffe', correct: false },
+            { text: 'Elephant', correct: false },
+        ]
+    },
+    {
+        question: "In August which country became the fourth country to land on the moon?",
+        answers: [
+            { text: 'France', correct: false },
+            { text: 'England', correct: false },
+            { text: 'Korea', correct: false },
+            { text: 'India', correct: true },
+        ]
+    },
 ];
 let currentQuestionIndex = 0;
 let score = 0;
