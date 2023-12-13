@@ -93,8 +93,8 @@ body {
     margin: 20px 0;
 }
 
-.btn:focus {
-    outline: none;
+.btn:hover {
+    border: 3px solid black;
 }
 
 /* Media queries */
