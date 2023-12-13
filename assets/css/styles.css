@@ -1,29 +1,24 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300;400&family=Oswald:wght@300;600&display=swap');
 
-/* --------- Global style */
+/* Global style */
 
 body {
     background-color: green;
-    background-size: no-repeat center center/cover;
-    background-position: 75%;
     padding: 40px 10% 0 10%;
-    flex-grow: 1;
-    position: relative;
-    z-index: 0;
     font-family: "montserrat", sans-serif;
     color: white;
     text-align: center;
 }
 
-/* --------- Heading */
+/* Heading */
 
 .heading {
     text-align: center;
     font-size: 2.5rem;
 }
 
-/* --------- Game layout */
+/* Game layout */
 
 .game-area {
     background-color: white;
@@ -47,7 +42,13 @@ body {
 }
 
 #question {
-    color: black;
+    color: white;
+    background-color: black;
+    width: 55%;
+    margin: auto;
+    border-radius: 5px;
+    font: 1.1rem;
+    padding: 10px;
 }
 
 .score-area {
@@ -69,10 +70,10 @@ body {
     padding: 25px;
 }
 
-/* --------- Buttons */
+/* Buttons */
 
 .btn {
-    width: 220px;
+    width: 180px;
     height: 60px;
     letter-spacing: 1.2px;
     color: white;
@@ -81,6 +82,7 @@ body {
     background-color: red;
     border-radius: 5px;
     border: none;
+    font: 1.1rem;
 }
 
 #answer-buttons {
@@ -91,8 +93,46 @@ body {
     margin: 20px 0;
 }
 
-
-
 .btn:focus {
     outline: none;
+}
+
+/* Media queries */
+@media (max-width: 576px) {
+    .btn {
+        width: 100px;
+        height: 40px;
+        letter-spacing: 1.1px;
+        font: 0.8rem;
+    }
+
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    #answer-buttons {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    .score-area {
+        width: 100%;
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
+
+    .question-area {
+        padding: 10% 0;
+        width: 100%;
+    }
+
+    .game-area {
+        height: 70vh;
+    }
 }
