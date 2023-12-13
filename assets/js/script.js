@@ -185,6 +185,105 @@ const questions = [
             { text: 'Operation Silver Sleigh', correct: false },
         ]
     },
+    {
+        question: "What was the name of Britney Spears memoir released in 2023?",
+        answers: [
+            { text: 'Revolution', correct: false },
+            { text: 'Reinvented', correct: false },
+            { text: 'Recovered', correct: false },
+            { text: 'The Woman In Me', correct: true },
+        ]
+    },
+    {
+        question: "Which Country won Eurovision this year?",
+        answers: [
+            { text: 'France', correct: false },
+            { text: 'England', correct: false },
+            { text: 'Ukraine', correct: false },
+            { text: 'Sweden', correct: true },
+        ]
+    },
+    {
+        question: "Who voiced Mario in the Super Mario Bros movie released in cinemas in April?",
+        answers: [
+            { text: 'Chris Pratt', correct: true },
+            { text: 'Ryan Reynolds', correct: false },
+            { text: 'Cillian Murphy', correct: false },
+            { text: 'Brad Pitt', correct: false },
+        ]
+    },
+    {
+        question: "The year 2023 is the Chinese Year of the what?",
+        answers: [
+            { text: 'Rat', correct: false },
+            { text: 'Rabbit', correct: true },
+            { text: 'Tiger', correct: false },
+            { text: 'Dragon', correct: false },
+        ]
+    },
+    {
+        question: "Who played Ursula in the 2023 remake of The Little Mermaid?",
+        answers: [
+            { text: 'Jennifer Lawrence', correct: false },
+            { text: 'Meryl Streep', correct: false },
+            { text: 'Julia Roberts', correct: false },
+            { text: 'Melissa McCarthy', correct: true },
+        ]
+    },
+    {
+        question: "What won a record 23rd Grand Slam Title at the French Open in Paris?",
+        answers: [
+            { text: 'Roger Federer', correct: false },
+            { text: 'Rafael Nadal', correct: false },
+            { text: 'Novak Djokovic', correct: true },
+            { text: 'Andy Murray', correct: false },
+        ]
+    },
+    {
+        question: "Which Country won the Fifa womens world cup?",
+        answers: [
+            { text: 'Spain', correct: true },
+            { text: 'USA', correct: false },
+            { text: 'Brazil', correct: false },
+            { text: 'Australia', correct: false },
+        ]
+    },
+    {
+        question: "Paris Hilton announced the birth of her son and daughter in January and November of this year. What is the first name of her daughter?",
+        answers: [
+            { text: 'Brooklyn', correct: false },
+            { text: 'New York', correct: false },
+            { text: 'Bordeaux', correct: false },
+            { text: 'London', correct: true },
+        ]
+    },
+    {
+        question: "2023 marks the 50th anniversary of what Australian landmark?",
+        answers: [
+            { text: 'Sydney Tower Eye', correct: false },
+            { text: 'Story Bridge', correct: false },
+            { text: 'The Sydney Opera House', correct: true },
+            { text: 'Sydney Harbour Bridge', correct: false },
+        ]
+    },
+    {
+        question: "The fourth instalment of which film series hit cinemas in 2023 after a two year delay caused by Covid?",
+        answers: [
+            { text: 'Mission Impossible', correct: false },
+            { text: 'John Wick Chapter 4', correct: true },
+            { text: 'Top Gun', correct: false },
+            { text: 'Terminator', correct: false },
+        ]
+    },
+    {
+        question: "What is 2023 in Roman Numerals?",
+        answers: [
+            { text: 'MMXXIII', correct: true },
+            { text: 'MMXVIII', correct: false },
+            { text: 'XXMVIII', correct: false },
+            { text: 'MMMMIII', correct: false },
+        ]
+    },
 ];
 let currentQuestionIndex = 0;
 let score = 0;
