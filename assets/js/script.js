@@ -143,9 +143,9 @@ const questions = [
     {
         question: "Which former Pope was buried on the fifth of January 2023?",
         answers: [
-            { text: 'Blue Ivy Carter', correct: false },
+            { text: 'Pope Benedict XVI', correct: true },
             { text: 'John Paul II', correct: false },
-            { text: 'John Paul I', correct: true },
+            { text: 'John Paul I', correct: false },
             { text: 'Paul VI', correct: false },
         ]
     },
@@ -363,6 +363,105 @@ const questions = [
             { text: 'US Bankcorp', correct: false },
             { text: 'Wells Fargo', correct: false },
             { text: 'Silicon Valley Bank', correct: true },
+        ]
+    },
+    {
+        question: "Tyson Fury won a boxing match against Francis Ngannou in a crossover combat event held in which country?",
+        answers: [
+            { text: 'USA', correct: false },
+            { text: 'England', correct: false },
+            { text: 'Saudi Arabia', correct: true },
+            { text: 'Australia', correct: false },
+        ]
+    },
+    {
+        question: "Which prime minister of New Zealand left office in January 2023?",
+        answers: [
+            { text: 'John Key', correct: false },
+            { text: 'Bill English', correct: false },
+            { text: 'Chris Hipkins', correct: false },
+            { text: 'Jacinda Ardern', correct: true },
+        ]
+    },
+    {
+        question: "Who broke the record for the most Grammy wins of all time?",
+        answers: [
+            { text: 'Lady Gaga', correct: false },
+            { text: 'Beyonce', correct: true },
+            { text: 'Taylor Swift', correct: false },
+            { text: 'Rihanna', correct: false },
+        ]
+    },
+    {
+        question: "In July 2023 tens of thousands of tourists fled which Greek island after massive wildfires?",
+        answers: [
+            { text: 'Kos', correct: false },
+            { text: 'Rhodes', correct: true },
+            { text: 'Zakynthos', correct: false },
+            { text: 'Skiathos', correct: false },
+        ]
+    },
+    {
+        question: "Which worlds largest flower is reported to be at risk of extinction due to habitat loss?",
+        answers: [
+            { text: 'Helianthus annuus', correct: false },
+            { text: 'Corypha umbraculifera', correct: false },
+            { text: 'Amorphophallus titanum', correct: false },
+            { text: 'Rafflesia', correct: true },
+        ]
+    },
+    {
+        question: "Which multi-sport event was held from 23 September to 8 October 2023 in Hangzhou, China?",
+        answers: [
+            { text: 'The World Athletics Championship', correct: false },
+            { text: 'The Asian Games', correct: true },
+            { text: 'The Womens Football World Cup', correct: false },
+            { text: 'The Rugby World Cup', correct: false },
+        ]
+    },
+    {
+        question: "On April 4th 2023 which country became the 31st member of Nato?",
+        answers: [
+            { text: 'Sweden', correct: false },
+            { text: 'Finland', correct: true },
+            { text: 'Norway', correct: false },
+            { text: 'Denmark', correct: false },
+        ]
+    },
+    {
+        question: "Which 2023 American Biographical sports film directed by Ben Affleck is about a basketball shoeline?",
+        answers: [
+            { text: 'Soaring', correct: false },
+            { text: 'Flying', correct: false },
+            { text: 'Air', correct: true },
+            { text: 'Nike Air', correct: false },
+        ]
+    },
+    {
+        question: "A newly unearthed writing draft reveals that the original title of Queens Bohemian Rhapsody was going to be what?",
+        answers: [
+            { text: 'Australian Rhapsody', correct: false },
+            { text: 'Chinese Rhapsody', correct: false },
+            { text: 'British Rhapsody', correct: false },
+            { text: 'Mongolian Rhapsody', correct: true },
+        ]
+    },
+    {
+        question: "On June 2023 a submersible operated by which company imploded during a expedition to view the Titanic?",
+        answers: [
+            { text: 'Oceangate', correct: true },
+            { text: 'Watergate', correct: false },
+            { text: 'Margate', correct: false },
+            { text: 'Seagate', correct: false },
+        ]
+    },
+    {
+        question: "On June 2023 a submersible operated by which company imploded during a expedition to view the Titanic?",
+        answers: [
+            { text: 'Oceangate', correct: true },
+            { text: 'Watergate', correct: false },
+            { text: 'Margate', correct: false },
+            { text: 'Seagate', correct: false },
         ]
     },
 ];
