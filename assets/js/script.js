@@ -456,12 +456,48 @@ const questions = [
         ]
     },
     {
-        question: "On June 2023 a submersible operated by which company imploded during a expedition to view the Titanic?",
+        question: "Who directed Oppenheimer?",
         answers: [
-            { text: 'Oceangate', correct: true },
-            { text: 'Watergate', correct: false },
-            { text: 'Margate', correct: false },
-            { text: 'Seagate', correct: false },
+            { text: 'Steven Spielberg', correct: false },
+            { text: 'Martin Scorsese', correct: false },
+            { text: 'Tim Burton', correct: false },
+            { text: 'Christopher Nolan', correct: true },
+        ]
+    },
+    {
+        question: "Who stunned Novak Djokovic to win the 2023 mens singles title?",
+        answers: [
+            { text: 'Andrey Rublev', correct: false },
+            { text: 'Stefanos Tsitsipas', correct: false },
+            { text: 'Jannik Sinner', correct: false },
+            { text: 'Carlos Alcaraz', correct: true },
+        ]
+    },
+    {
+        question: "For the first time in US History 2023 saw the leader of which US governmental body ousted from their post?",
+        answers: [
+            { text: 'Senate', correct: false },
+            { text: 'The Department of Defense', correct: false },
+            { text: 'House of Representatives', correct: true },
+            { text: 'NASA', correct: false },
+        ]
+    },
+    {
+        question: "Which 2023 film starring Leonardo DiCaprio and Robert De Niro is about a series of Oklahoma murders in the 1920s?",
+        answers: [
+            { text: 'Cobweb', correct: false },
+            { text: 'Knock at the Cabin', correct: false },
+            { text: 'When Evil Lurks', correct: false },
+            { text: 'Killers of the Flower Moon', correct: true },
+        ]
+    },
+    {
+        question: "In November 17th 2023 OpenAI’s board members made the decision to remove who as its CEO only to reinstate him a few days later?",
+        answers: [
+            { text: 'Sanjay Mehrotra', correct: false },
+            { text: 'Sam Altman', correct: true },
+            { text: 'Jay Chaudhry', correct: false },
+            { text: 'Arvind Krishna', correct: false },
         ]
     },
 ];
