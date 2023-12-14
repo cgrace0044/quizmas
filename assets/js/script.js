@@ -492,12 +492,57 @@ const questions = [
         ]
     },
     {
-        question: "In November 17th 2023 OpenAI’s board members made the decision to remove who as its CEO only to reinstate him a few days later?",
+        question: "In November 17th 2023 OpenAIs board members made the decision to remove who as its CEO only to reinstate him a few days later?",
         answers: [
             { text: 'Sanjay Mehrotra', correct: false },
             { text: 'Sam Altman', correct: true },
             { text: 'Jay Chaudhry', correct: false },
             { text: 'Arvind Krishna', correct: false },
+        ]
+    },
+    {
+        question: "Which singer did his last ever world tour in 2023?",
+        answers: [
+            { text: 'Elton John', correct: true },
+            { text: 'Cliff Richard', correct: false },
+            { text: 'Rod Stewart', correct: false },
+            { text: 'Iggy Pop', correct: false },
+        ]
+    },
+    {
+        question: "Which former British prime minister was appointed foreign secretary in November?",
+        answers: [
+            { text: 'Gordon Brown', correct: false },
+            { text: 'Theresa May', correct: false },
+            { text: 'Boris Johnson', correct: false },
+            { text: 'David Cameron', correct: true },
+        ]
+    },
+    {
+        question: "What was the Oxford English Dictionarys word of the year?",
+        answers: [
+            { text: 'Petfluencer', correct: false },
+            { text: 'Rizz', correct: true },
+            { text: 'Cakeage', correct: false },
+            { text: 'Latine', correct: false },
+        ]
+    },
+    {
+        question: "Who was the only non Red Bull driver to win a Grand Prix race in the 2023 Formula 1 World Championship?",
+        answers: [
+            { text: 'Charles Leclerc', correct: false },
+            { text: 'Fernando Alonso', correct: false },
+            { text: 'Carlos Sainz', correct: true },
+            { text: 'Lewis Hamilton', correct: false },
+        ]
+    },
+    {
+        question: "Who won the Womens 6 Nations in 2023?",
+        answers: [
+            { text: 'Wales', correct: false },
+            { text: 'Ireland', correct: false },
+            { text: 'France', correct: false },
+            { text: 'England', correct: true },
         ]
     },
 ];
