@@ -1,10 +1,10 @@
 const startButtton = document.getElementById("start");
 const nextButtton = document.getElementById("next");
+const questionElement = document.getElementById("question");
+const answerButtons = document.getElementById("answer-buttons");
 
 startButtton.addEventListener('click', runGame);
 
-const questionElement = document.getElementById("question");
-const answerButtons = document.getElementById("answer-buttons");
 const questions = [
     {
         question: "What was the name of Prince Harrys memoir released in 2023?",
@@ -232,7 +232,7 @@ const questions = [
         ]
     },
     {
-        question: "What won a record 23rd Grand Slam Title at the French Open in Paris?",
+        question: "Who won a record 23rd Grand Slam Title at the French Open in Paris?",
         answers: [
             { text: 'Roger Federer', correct: false },
             { text: 'Rafael Nadal', correct: false },
@@ -548,10 +548,32 @@ const questions = [
     },
 ];
 
+
 function runGame() {
     currentQuestionIndex = 0;
     score = 0;
     displayQuestion();
+}
+
+function displayQuestion() {
+    let currentQuestion = questions[currentQuestionIndex];
+    questionElement.innerHTML = currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        // if the answer displayed in the button matches the correct answer
+        // then associate a correct handler function, otherwise error.
+        
+        if (answer.correct) {
+            button.onclick = onClickedCorrectButton;
+        } else {
+            button.onclick = onClickedIncorrectButton;
+        }
+        
+        answerButtons.appendChild(button);
+    });
 }
 
 function recordAction(correct) {
@@ -563,6 +585,7 @@ function recordAction(correct) {
     if (currentQuestionIndex >= questions.length) {
         // handle game finished
         console.log("game is finished!!!");
+        questionElement.innerHTML = "Game Over"
     }
     // empty it out
     const buttons = document.getElementById("answer-buttons");
@@ -592,27 +615,7 @@ function onClickedIncorrectButton() {
     document.getElementById("incorrect").innerText = ++oldScore;
 }
 
-function displayQuestion() {
-    let currentQuestion = questions[currentQuestionIndex];
-    questionElement.innerHTML = currentQuestion.question;
 
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        questionElement.innerHTML = question.text;
-        button.innerHTML = answer.text;
-        div.classList.add("question");
-        // if the answer displayed in the button matches the correct answer
-        // then associate a correct handler function, otherwise error.
-        
-        if (answer.correct) {
-            button.onclick = onClickedCorrectButton;
-        } else {
-            button.onclick = onClickedIncorrectButton;
-        }
-
-        answerButtons.appendChild(button);
-    });
-}
 
 
 
