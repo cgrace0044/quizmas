@@ -1,4 +1,5 @@
 const startButtton = document.getElementById("start");
+const nextButtton = document.getElementById("next");
 
 startButtton.addEventListener('click', runGame);
 
@@ -546,8 +547,6 @@ const questions = [
         ]
     },
 ];
-let currentQuestionIndex = 0;
-let score = 0;
 
 function runGame() {
     currentQuestionIndex = 0;
@@ -571,28 +570,40 @@ function recordAction(correct) {
     displayQuestion();
 }
 
+/**
+ * Gets the current score from the DOM and increments it by 1
+ */
 function onClickedCorrectButton() {
     this.style.backgroundColor = 'green';
     console.log("it is correct!");
     recordAction(true);
+    let oldScore = parseInt(document.getElementById("score").innerText);
+    document.getElementById("score").innerText = ++oldScore;
 }
 
+/**
+ * Gets the current tally of incorrect answers from the DOM and increments it by 1
+ */
 function onClickedIncorrectButton() {
+    this.style.backgroundColor = 'red';
     console.log("it is definitely not correct!");
     recordAction(false);
+    let oldScore = parseInt(document.getElementById("incorrect").innerText);
+    document.getElementById("incorrect").innerText = ++oldScore;
 }
 
 function displayQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    questionElement.innerHTML = currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
+        questionElement.innerHTML = question.text;
         button.innerHTML = answer.text;
-        button.classList.add("btn");
+        div.classList.add("question");
         // if the answer displayed in the button matches the correct answer
         // then associate a correct handler function, otherwise error.
+        
         if (answer.correct) {
             button.onclick = onClickedCorrectButton;
         } else {
@@ -603,4 +614,8 @@ function displayQuestion() {
     });
 }
 
-runGame();
+
+
+
+
+
