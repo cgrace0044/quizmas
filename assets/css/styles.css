@@ -47,7 +47,7 @@ body {
     width: 55%;
     margin: auto;
     border-radius: 5px;
-    font: 1.1rem;
+    font-size: 1.1rem;
     padding: 10px;
 }
 
@@ -82,7 +82,7 @@ body {
     background-color: black;
     border-radius: 5px;
     border: none;
-    font: 1.1rem;
+    font-size: 1.1rem;
 }
 
 #answer-buttons {
@@ -107,7 +107,7 @@ body {
     background-color: grey;
     border-radius: 5px;
     border: none;
-    font: 1.1rem;
+    font-size: 1.1rem;
 }
 
 #start:hover, #next:hover {
@@ -152,9 +152,11 @@ body {
     .game-area {
         height: 90vh;
         width: 90%;
+        padding: 0.5%;
     }
 
     #question {
         padding: 3px;
         font-size: 0.8rem;
+        width: 70%;
 }
