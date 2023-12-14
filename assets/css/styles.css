@@ -119,8 +119,8 @@ body {
     .btn {
         width: 100px;
         height: 40px;
-        letter-spacing: 1.1px;
-        font: 0.5rem;
+        letter-spacing: normal;
+        font-size: 0.8rem;
     }
 
     .heading {
@@ -156,5 +156,5 @@ body {
 
     #question {
         padding: 3px;
-        font: 0.6rem;
+        font-size: 0.8rem;
 }
