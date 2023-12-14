@@ -120,7 +120,7 @@ body {
         width: 100px;
         height: 40px;
         letter-spacing: 1.1px;
-        font: 0.8rem;
+        font: 0.5rem;
     }
 
     .heading {
@@ -150,6 +150,11 @@ body {
     }
 
     .game-area {
-        height: 70vh;
+        height: 90vh;
+        width: 90%;
     }
+
+    #question {
+        padding: 3px;
+        font: 0.6rem;
 }
