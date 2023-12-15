@@ -1,9 +1,9 @@
-const startButtton = document.getElementById("start");
+const startButton = document.getElementById("start");
 const nextButtton = document.getElementById("next");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 
-startButtton.addEventListener('click', runGame);
+startButton.addEventListener('click', runGame);
 
 const questions = [
     {
@@ -553,6 +553,8 @@ function runGame() {
     currentQuestionIndex = 0;
     score = 0;
     displayQuestion();
+    startButton.style.display = "none";
+    questionElement.style.backgroundColor = "black";
 }
 
 function displayQuestion() {
@@ -576,21 +578,13 @@ function displayQuestion() {
     });
 }
 
-function recordAction(correct) {
-    if (correct) {
-        score += 1;
-    }
-
+function gameOver() {
     currentQuestionIndex += 1;
     if (currentQuestionIndex >= questions.length) {
         // handle game finished
         console.log("game is finished!!!");
         questionElement.innerHTML = "Game Over"
     }
-    // empty it out
-    const buttons = document.getElementById("answer-buttons");
-    buttons.innerHTML = "";
-    displayQuestion();
 }
 
 /**
