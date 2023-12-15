@@ -1,9 +1,10 @@
 const startButton = document.getElementById("start");
-const nextButtton = document.getElementById("next");
+const nextButton = document.getElementById("next");
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 
 startButton.addEventListener('click', runGame);
+nextButton.addEventListener('click', nextQuestion);
 
 const questions = [
     {
@@ -548,7 +549,6 @@ const questions = [
     },
 ];
 
-
 function runGame() {
     currentQuestionIndex = 0;
     score = 0;
@@ -578,6 +578,10 @@ function displayQuestion() {
     });
 }
 
+function nextQuestion() {
+    displayQuestion(currentQuestionIndex += 1)
+}
+
 function gameOver() {
     currentQuestionIndex += 1;
     if (currentQuestionIndex >= questions.length) {
@@ -593,7 +597,6 @@ function gameOver() {
 function onClickedCorrectButton() {
     this.style.backgroundColor = 'green';
     console.log("it is correct!");
-    recordAction(true);
     let oldScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").innerText = ++oldScore;
 }
@@ -604,7 +607,6 @@ function onClickedCorrectButton() {
 function onClickedIncorrectButton() {
     this.style.backgroundColor = 'red';
     console.log("it is definitely not correct!");
-    recordAction(false);
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
 }
