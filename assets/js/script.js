@@ -575,22 +575,27 @@ function displayCurrentScore() {
 }
 
 function displayQuestion() {
+    // empty current answers
+    answerButtons.innerHTML = ''
+
     let currentQuestion = questions[currentQuestionIndex];
+     
+    // load the question
     questionElement.innerHTML = currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
+        const button = document.createElement('button');
         button.innerHTML = answer.text;
-        button.classList.add("btn");
+        button.classList.add('btn');
+
         // if the answer displayed in the button matches the correct answer
         // then associate a correct handler function, otherwise error.
-        
         if (answer.correct) {
             button.onclick = onClickedCorrectButton;
         } else {
             button.onclick = onClickedIncorrectButton;
         }
-        
+
         answerButtons.appendChild(button);
     });
 }
