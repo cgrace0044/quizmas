@@ -601,7 +601,13 @@ function displayQuestion() {
 }
 
 function nextQuestion() {
-    displayQuestion(currentQuestionIndex += 1)
+    if (currentQuestionIndex < questionsTemp.length - 1) {
+        currentQuestionIndex += 1;
+
+        displayQuestion();
+    } else {
+        gameOver();
+    }
 }
 
 function gameOver() {
