@@ -638,8 +638,10 @@ function disableFurtherAnswers() {
 function onClickedCorrectButton() {
     this.style.backgroundColor = 'green';
     console.log("it is correct!");
-    let oldScore = parseInt(document.getElementById("score").innerText);
-    document.getElementById("score").innerText = ++oldScore;
+    score += 1;
+
+    displayCurrentScore();
+    disableFurtherAnswers();
 }
 
 /**
@@ -648,8 +650,10 @@ function onClickedCorrectButton() {
 function onClickedIncorrectButton() {
     this.style.backgroundColor = 'red';
     console.log("it is definitely not correct!");
-    let oldScore = parseInt(document.getElementById("incorrect").innerText);
-    document.getElementById("incorrect").innerText = ++oldScore;
+    incorrect += 1;
+
+    displayCurrentScore();
+    disableFurtherAnswers();
 }
 
 
