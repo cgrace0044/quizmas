@@ -569,6 +569,11 @@ function runGame() {
     nextQuestion();
 }
 
+function displayCurrentScore() {
+    document.getElementById('score').innerText = score + '';
+    document.getElementById('incorrect').innerText = incorrect + '';
+}
+
 function displayQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     questionElement.innerHTML = currentQuestion.question;
