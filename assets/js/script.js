@@ -1,18 +1,18 @@
-let currentQuestionIndex = -1;
-let score = 0;
+let currentQuestionIndex = -1
+let score = 0
 let incorrect = 0
 
-const startButton = document.getElementById("start");
-const nextButton = document.getElementById("next");
-const questionElement = document.getElementById("question");
-const answerButtons = document.getElementById("answer-buttons");
+const startButton = document.getElementById('start')
+const nextButton = document.getElementById('next')
+const questionElement = document.getElementById('question')
+const answerButtons = document.getElementById('answer-buttons')
 
-startButton.addEventListener('click', runGame);
-nextButton.addEventListener('click', nextQuestion);
+startButton.addEventListener('click', runGame)
+nextButton.addEventListener('click', nextQuestion)
 
 const questions = [
     {
-        question: "What was the name of Prince Harrys memoir released in 2023?",
+        question: 'What was the name of Prince Harry\'s memoir released in 2023?',
         answers: [
             { text: 'Spare', correct: true },
             { text: 'Extra', correct: false },
@@ -21,7 +21,7 @@ const questions = [
         ]
     },
     {
-        question: "What was the name of the submarine that went missing in June?",
+        question: 'What was the name of the submarine that went missing in June?',
         answers: [
             { text: 'Cosmos', correct: false },
             { text: 'Titan', correct: true },
@@ -30,7 +30,7 @@ const questions = [
         ]
     },
     {
-        question: "The Barbie movie was released in cinemas on June 21st. What other blockbuster was released on the same day?",
+        question: 'The Barbie movie was released in cinemas on June 21st. What other blockbuster was released on the same day?',
         answers: [
             { text: 'Killers of the Flower Moon', correct: false },
             { text: 'John Wick: Chapter 4', correct: false },
@@ -39,7 +39,7 @@ const questions = [
         ]
     },
     {
-        question: "What was Twitter renamed to at the end of July?",
+        question: 'What was Twitter renamed to at the end of July?',
         answers: [
             { text: 'Y', correct: false },
             { text: 'X', correct: true },
@@ -48,7 +48,7 @@ const questions = [
         ]
     },
     {
-        question: "Which two countries co-hosted the 2023 Fifa Womens World Cup?",
+        question: 'Which two countries co-hosted the 2023 Fifa Womens World Cup?',
         answers: [
             { text: 'Australia and New Zealand', correct: true },
             { text: 'Spain and Portugal', correct: false },
@@ -57,7 +57,7 @@ const questions = [
         ]
     },
     {
-        question: "What was the most watched English language series on Netflix in 2023?",
+        question: 'What was the most watched English language series on Netflix in 2023?',
         answers: [
             { text: 'Stranger Things 4', correct: false },
             { text: 'Wednesday', correct: true },
@@ -66,7 +66,7 @@ const questions = [
         ]
     },
     {
-        question: "What was the name of Taylor Swifts 2023 sellout tour?",
+        question: 'What was the name of Taylor Swift\'s 2023 sellout tour?',
         answers: [
             { text: 'Renaissance', correct: false },
             { text: 'The Eras Tour', correct: true },
@@ -75,7 +75,7 @@ const questions = [
         ]
     },
     {
-        question: "Which city was the host of the 2023 Eurovision Song Contest?",
+        question: 'Which city was the host of the 2023 Eurovision Song Contest?',
         answers: [
             { text: 'Stockholm', correct: false },
             { text: 'Oslo', correct: false },
@@ -84,7 +84,7 @@ const questions = [
         ]
     },
     {
-        question: "What faux animal head did Kylie Jenner wear to Paris fashion week?",
+        question: 'What faux animal head did Kylie Jenner wear to Paris fashion week?',
         answers: [
             { text: 'Tiger', correct: false },
             { text: 'Lion', correct: true },
@@ -93,7 +93,7 @@ const questions = [
         ]
     },
     {
-        question: "In August which country became the fourth country to land on the moon?",
+        question: 'In August which country became the fourth country to land on the moon?',
         answers: [
             { text: 'France', correct: false },
             { text: 'England', correct: false },
@@ -102,7 +102,7 @@ const questions = [
         ]
     },
     {
-        question: "What did Rihanna reveal in her performance of the halftime show at the Super Bowl?",
+        question: 'What did Rihanna reveal in her performance of the halftime show at the Super Bowl?',
         answers: [
             { text: 'The Start Date of her Tour', correct: false },
             { text: 'The Name of her New Albumn', correct: false },
@@ -111,7 +111,7 @@ const questions = [
         ]
     },
     {
-        question: "Which film won the 2023 Oscar for Best Picture?",
+        question: 'Which film won the 2023 Oscar for Best Picture?',
         answers: [
             { text: 'All Quiet On The Western Front', correct: false },
             { text: 'Oppenheimer', correct: false },
@@ -120,7 +120,7 @@ const questions = [
         ]
     },
     {
-        question: "What was the name of Kourtney Kardashian and Travis Barkers son born in December 2023?",
+        question: 'What was the name of Kourtney Kardashian and Travis Barkers son born in December 2023?',
         answers: [
             { text: 'Parade Barker', correct: false },
             { text: 'Rocky 13 Barker', correct: true },
@@ -129,7 +129,7 @@ const questions = [
         ]
     },
     {
-        question: "In the Netflix documentary Beckham what car did Victoria Beckham admit that her Dad would drive her to school in whist claiming her family was working class?",
+        question: 'In the Netflix documentary Beckham what car did Victoria Beckham admit that her Dad would drive her to school in whist claiming her family was working class?',
         answers: [
             { text: 'BMW', correct: false },
             { text: 'Rolls Royce', correct: true },
@@ -138,7 +138,7 @@ const questions = [
         ]
     },
     {
-        question: "What is the name of Beyonces daughter who accompanied her during the 2023 International Renaissance Tour?",
+        question: 'What is the name of Beyonce\'s daughter who accompanied her during the 2023 International Renaissance Tour?',
         answers: [
             { text: 'Blue Ivy Carter', correct: true },
             { text: 'Anabella', correct: false },
@@ -147,7 +147,7 @@ const questions = [
         ]
     },
     {
-        question: "Which former Pope was buried on the fifth of January 2023?",
+        question: 'Which former Pope was buried on the fifth of January 2023?',
         answers: [
             { text: 'Pope Benedict XVI', correct: true },
             { text: 'John Paul II', correct: false },
@@ -156,7 +156,7 @@ const questions = [
         ]
     },
     {
-        question: "What was the date of Kind Charles Coronation?",
+        question: 'What was the date of Kind Charles\' Coronation?',
         answers: [
             { text: 'June 5th 2023', correct: false },
             { text: 'February 4th 2023', correct: false },
@@ -165,7 +165,7 @@ const questions = [
         ]
     },
     {
-        question: "Which country won the rugby world cup 2023?",
+        question: 'Which country won the rugby world cup 2023?',
         answers: [
             { text: 'France', correct: false },
             { text: 'South Africa', correct: true },
@@ -174,7 +174,7 @@ const questions = [
         ]
     },
     {
-        question: "Which film won Best Picture in the Baftas?",
+        question: 'Which film won Best Picture in the Baftas?',
         answers: [
             { text: 'Everything Everywhere All At Once', correct: false },
             { text: 'All Quiet on the Western Front', correct: true },
@@ -183,7 +183,7 @@ const questions = [
         ]
     },
     {
-        question: "The Kings Coronation was planned using which secret code name?",
+        question: 'The King\'s Coronation was planned using which secret code name?',
         answers: [
             { text: 'Operation Ruby Slipper', correct: false },
             { text: 'Operation Diamond Crown', correct: false },
@@ -192,7 +192,7 @@ const questions = [
         ]
     },
     {
-        question: "What was the name of Britney Spears memoir released in 2023?",
+        question: 'What was the name of Britney Spears\' memoir released in 2023?',
         answers: [
             { text: 'Revolution', correct: false },
             { text: 'Reinvented', correct: false },
@@ -201,7 +201,7 @@ const questions = [
         ]
     },
     {
-        question: "Which Country won Eurovision this year?",
+        question: 'Which Country won Eurovision this year?',
         answers: [
             { text: 'France', correct: false },
             { text: 'England', correct: false },
@@ -210,7 +210,7 @@ const questions = [
         ]
     },
     {
-        question: "Who voiced Mario in the Super Mario Bros movie released in cinemas in April?",
+        question: 'Who voiced Mario in the Super Mario Bro\'s movie released in cinemas in April?',
         answers: [
             { text: 'Chris Pratt', correct: true },
             { text: 'Ryan Reynolds', correct: false },
@@ -219,7 +219,7 @@ const questions = [
         ]
     },
     {
-        question: "The year 2023 is the Chinese Year of the what?",
+        question: 'The year 2023 is the Chinese Year of the what?',
         answers: [
             { text: 'Rat', correct: false },
             { text: 'Rabbit', correct: true },
@@ -228,7 +228,7 @@ const questions = [
         ]
     },
     {
-        question: "Who played Ursula in the 2023 remake of The Little Mermaid?",
+        question: 'Who played Ursula in the 2023 remake of The Little Mermaid?',
         answers: [
             { text: 'Jennifer Lawrence', correct: false },
             { text: 'Meryl Streep', correct: false },
@@ -237,7 +237,7 @@ const questions = [
         ]
     },
     {
-        question: "Who won a record 23rd Grand Slam Title at the French Open in Paris?",
+        question: 'Who won a record 23rd Grand Slam Title at the French Open in Paris?',
         answers: [
             { text: 'Roger Federer', correct: false },
             { text: 'Rafael Nadal', correct: false },
@@ -246,7 +246,7 @@ const questions = [
         ]
     },
     {
-        question: "Which Country won the Fifa womens world cup?",
+        question: 'Which Country won the Fifa womens world cup?',
         answers: [
             { text: 'Spain', correct: true },
             { text: 'USA', correct: false },
@@ -255,7 +255,7 @@ const questions = [
         ]
     },
     {
-        question: "Paris Hilton announced the birth of her son and daughter in January and November of this year. What is the first name of her daughter?",
+        question: 'Paris Hilton announced the birth of her son and daughter in January and November of this year. What is the first name of her daughter?',
         answers: [
             { text: 'Brooklyn', correct: false },
             { text: 'New York', correct: false },
@@ -264,7 +264,7 @@ const questions = [
         ]
     },
     {
-        question: "2023 marks the 50th anniversary of what Australian landmark?",
+        question: '2023 marks the 50th anniversary of what Australian landmark?',
         answers: [
             { text: 'Sydney Tower Eye', correct: false },
             { text: 'Story Bridge', correct: false },
@@ -273,7 +273,7 @@ const questions = [
         ]
     },
     {
-        question: "The fourth instalment of which film series hit cinemas in 2023 after a two year delay caused by Covid?",
+        question: 'The fourth instalment of which film series hit cinemas in 2023 after a two year delay caused by Covid?',
         answers: [
             { text: 'Mission Impossible', correct: false },
             { text: 'John Wick Chapter 4', correct: true },
@@ -282,7 +282,7 @@ const questions = [
         ]
     },
     {
-        question: "What is 2023 in Roman Numerals?",
+        question: 'What is 2023 in Roman Numerals?',
         answers: [
             { text: 'MMXXIII', correct: true },
             { text: 'MMXVIII', correct: false },
@@ -291,7 +291,7 @@ const questions = [
         ]
     },
     {
-        question: "Which currency did Croatia adopt on 1 January 2023?",
+        question: 'Which currency did Croatia adopt on 1 January 2023?',
         answers: [
             { text: 'The Euro', correct: true },
             { text: 'Pound', correct: false },
@@ -300,7 +300,7 @@ const questions = [
         ]
     },
     {
-        question: "In early August 2023 wildfires broke out in the US state of Hawaii, predominantly on which island?",
+        question: 'In early August 2023 wildfires broke out in the US state of Hawaii, predominantly on which island?',
         answers: [
             { text: 'Maui', correct: true },
             { text: 'Kauai', correct: false },
@@ -309,7 +309,7 @@ const questions = [
         ]
     },
     {
-        question: "After a 35 year run and more than 13,000 performances on Broadway which musical closed on February 18 2023?",
+        question: 'After a 35 year run and more than 13,000 performances on Broadway which musical closed on February 18 2023?',
         answers: [
             { text: 'Chicago', correct: false },
             { text: 'Wicked', correct: false },
@@ -318,7 +318,7 @@ const questions = [
         ]
     },
     {
-        question: "Which actor from the sitcom Friends passed away on the 28th of October 2023?",
+        question: 'Which actor from the sitcom Friends passed away on the 28th of October 2023?',
         answers: [
             { text: 'Paul Rudd', correct: false },
             { text: 'David Schwimmer', correct: false },
@@ -327,7 +327,7 @@ const questions = [
         ]
     },
     {
-        question: "In which range of mountains was the earthquake of the 8th of September 2023 in Morocco?",
+        question: 'In which range of mountains was the earthquake of the 8th of September 2023 in Morocco?',
         answers: [
             { text: 'Kunlun Mountains', correct: false },
             { text: 'Carpathian Mountains', correct: false },
@@ -336,7 +336,7 @@ const questions = [
         ]
     },
     {
-        question: "What is the 2023 Highest Grossing movie worldwide?",
+        question: 'What is the 2023 Highest Grossing movie worldwide?',
         answers: [
             { text: 'Oppenheimer', correct: false },
             { text: 'All Quiet on the Western Front', correct: false },
@@ -345,7 +345,7 @@ const questions = [
         ]
     },
     {
-        question: "Born in Rosario and one of the most searched people on Google in 2023. Who is it?",
+        question: 'Born in Rosario and one of the most searched people on Google in 2023. Who is it?',
         answers: [
             { text: 'Lionel Messi', correct: true },
             { text: 'Juan Martin del Potro', correct: false },
@@ -354,7 +354,7 @@ const questions = [
         ]
     },
     {
-        question: "Who won the copyright infringement case over the song Thinking Out Loud?",
+        question: 'Who won the copyright infringement case over the song Thinking Out Loud?',
         answers: [
             { text: 'Ed Sheeran', correct: true },
             { text: 'Dermot Kennedy', correct: false },
@@ -363,7 +363,7 @@ const questions = [
         ]
     },
     {
-        question: "Due to liquidity issues, both First Republic Bank and which other US Financial Institution utterly collapsed in 2023?",
+        question: 'Due to liquidity issues, both First Republic Bank and which other US Financial Institution utterly collapsed in 2023?',
         answers: [
             { text: 'Citigroup', correct: false },
             { text: 'US Bankcorp', correct: false },
@@ -372,7 +372,7 @@ const questions = [
         ]
     },
     {
-        question: "Tyson Fury won a boxing match against Francis Ngannou in a crossover combat event held in which country?",
+        question: 'Tyson Fury won a boxing match against Francis Ngannou in a crossover combat event held in which country?',
         answers: [
             { text: 'USA', correct: false },
             { text: 'England', correct: false },
@@ -381,7 +381,7 @@ const questions = [
         ]
     },
     {
-        question: "Which prime minister of New Zealand left office in January 2023?",
+        question: 'Which prime minister of New Zealand left office in January 2023?',
         answers: [
             { text: 'John Key', correct: false },
             { text: 'Bill English', correct: false },
@@ -390,7 +390,7 @@ const questions = [
         ]
     },
     {
-        question: "Who broke the record for the most Grammy wins of all time?",
+        question: 'Who broke the record for the most Grammy wins of all time?',
         answers: [
             { text: 'Lady Gaga', correct: false },
             { text: 'Beyonce', correct: true },
@@ -399,7 +399,7 @@ const questions = [
         ]
     },
     {
-        question: "In July 2023 tens of thousands of tourists fled which Greek island after massive wildfires?",
+        question: 'In July 2023 tens of thousands of tourists fled which Greek island after massive wildfires?',
         answers: [
             { text: 'Kos', correct: false },
             { text: 'Rhodes', correct: true },
@@ -408,7 +408,7 @@ const questions = [
         ]
     },
     {
-        question: "Which worlds largest flower is reported to be at risk of extinction due to habitat loss?",
+        question: 'Which worlds largest flower is reported to be at risk of extinction due to habitat loss?',
         answers: [
             { text: 'Helianthus annuus', correct: false },
             { text: 'Corypha umbraculifera', correct: false },
@@ -417,7 +417,7 @@ const questions = [
         ]
     },
     {
-        question: "Which multi-sport event was held from 23 September to 8 October 2023 in Hangzhou, China?",
+        question: 'Which multi-sport event was held from 23 September to 8 October 2023 in Hangzhou, China?',
         answers: [
             { text: 'The World Athletics Championship', correct: false },
             { text: 'The Asian Games', correct: true },
@@ -426,7 +426,7 @@ const questions = [
         ]
     },
     {
-        question: "On April 4th 2023 which country became the 31st member of Nato?",
+        question: 'On April 4th 2023 which country became the 31st member of Nato?',
         answers: [
             { text: 'Sweden', correct: false },
             { text: 'Finland', correct: true },
@@ -435,7 +435,7 @@ const questions = [
         ]
     },
     {
-        question: "Which 2023 American Biographical sports film directed by Ben Affleck is about a basketball shoeline?",
+        question: 'Which 2023 American Biographical sports film directed by Ben Affleck is about a basketball shoeline?',
         answers: [
             { text: 'Soaring', correct: false },
             { text: 'Flying', correct: false },
@@ -444,7 +444,7 @@ const questions = [
         ]
     },
     {
-        question: "A newly unearthed writing draft reveals that the original title of Queens Bohemian Rhapsody was going to be what?",
+        question: 'A newly unearthed writing draft reveals that the original title of Queens Bohemian Rhapsody was going to be what?',
         answers: [
             { text: 'Australian Rhapsody', correct: false },
             { text: 'Chinese Rhapsody', correct: false },
@@ -453,7 +453,7 @@ const questions = [
         ]
     },
     {
-        question: "On June 2023 a submersible operated by which company imploded during a expedition to view the Titanic?",
+        question: 'On June 2023 a submersible operated by which company imploded during a expedition to view the Titanic?',
         answers: [
             { text: 'Oceangate', correct: true },
             { text: 'Watergate', correct: false },
@@ -462,7 +462,7 @@ const questions = [
         ]
     },
     {
-        question: "Who directed Oppenheimer?",
+        question: 'Who directed Oppenheimer?',
         answers: [
             { text: 'Steven Spielberg', correct: false },
             { text: 'Martin Scorsese', correct: false },
@@ -471,7 +471,7 @@ const questions = [
         ]
     },
     {
-        question: "Who stunned Novak Djokovic to win the 2023 mens singles title?",
+        question: 'Who stunned Novak Djokovic to win the 2023 men\'s singles title?',
         answers: [
             { text: 'Andrey Rublev', correct: false },
             { text: 'Stefanos Tsitsipas', correct: false },
@@ -480,7 +480,7 @@ const questions = [
         ]
     },
     {
-        question: "For the first time in US History 2023 saw the leader of which US governmental body ousted from their post?",
+        question: 'For the first time in US History 2023 saw the leader of which US governmental body ousted from their post?',
         answers: [
             { text: 'Senate', correct: false },
             { text: 'The Department of Defense', correct: false },
@@ -489,7 +489,7 @@ const questions = [
         ]
     },
     {
-        question: "Which 2023 film starring Leonardo DiCaprio and Robert De Niro is about a series of Oklahoma murders in the 1920s?",
+        question: 'Which 2023 film starring Leonardo DiCaprio and Robert De Niro is about a series of Oklahoma murders in the 1920s?',
         answers: [
             { text: 'Cobweb', correct: false },
             { text: 'Knock at the Cabin', correct: false },
@@ -498,7 +498,7 @@ const questions = [
         ]
     },
     {
-        question: "In November 17th 2023 OpenAIs board members made the decision to remove who as its CEO only to reinstate him a few days later?",
+        question: 'In November 17th 2023 OpenAI\'s board members made the decision to remove who as its CEO only to reinstate him a few days later?',
         answers: [
             { text: 'Sanjay Mehrotra', correct: false },
             { text: 'Sam Altman', correct: true },
@@ -507,7 +507,7 @@ const questions = [
         ]
     },
     {
-        question: "Which singer did his last ever world tour in 2023?",
+        question: 'Which singer did his last ever world tour in 2023?',
         answers: [
             { text: 'Elton John', correct: true },
             { text: 'Cliff Richard', correct: false },
@@ -516,7 +516,7 @@ const questions = [
         ]
     },
     {
-        question: "Which former British prime minister was appointed foreign secretary in November?",
+        question: 'Which former British prime minister was appointed foreign secretary in November?',
         answers: [
             { text: 'Gordon Brown', correct: false },
             { text: 'Theresa May', correct: false },
@@ -525,7 +525,7 @@ const questions = [
         ]
     },
     {
-        question: "What was the Oxford English Dictionarys word of the year?",
+        question: 'What was the Oxford English Dictionary\'s word of the year?',
         answers: [
             { text: 'Petfluencer', correct: false },
             { text: 'Rizz', correct: true },
@@ -534,7 +534,7 @@ const questions = [
         ]
     },
     {
-        question: "Who was the only non Red Bull driver to win a Grand Prix race in the 2023 Formula 1 World Championship?",
+        question: 'Who was the only non Red Bull driver to win a Grand Prix race in the 2023 Formula 1 World Championship?',
         answers: [
             { text: 'Charles Leclerc', correct: false },
             { text: 'Fernando Alonso', correct: false },
@@ -543,7 +543,7 @@ const questions = [
         ]
     },
     {
-        question: "Who won the Womens 6 Nations in 2023?",
+        question: 'Who won the Womens 6 Nations in 2023?',
         answers: [
             { text: 'Wales', correct: false },
             { text: 'Ireland', correct: false },
