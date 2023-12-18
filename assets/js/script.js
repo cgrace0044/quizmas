@@ -600,23 +600,29 @@ function displayQuestion() {
     });
 }
 
-function nextQuestion() {
-    if (currentQuestionIndex < questionsTemp.length - 1) {
-        currentQuestionIndex += 1;
+function nextQuestion () {
+  if (currentQuestionIndex < questionsTemp.length - 1) {
+    currentQuestionIndex += 1
 
-        displayQuestion();
-    } else {
-        gameOver();
-    }
+    displayQuestion()
+  } else {
+    gameOver()
+  }
 }
 
 function gameOver() {
-    currentQuestionIndex += 1;
-    if (currentQuestionIndex >= questions.length) {
-        // handle game finished
-        console.log("game is finished!!!");
-        questionElement.innerHTML = "Game Over"
-    }
+    // handle game finished
+    console.log('game is finished!!!');
+    // empty current answers
+    answerButtons.innerHTML = '';
+    questionElement.innerHTML = 'Game Over';
+
+    // show the start button
+    startButton.classList.remove('hidden');
+    // but show it now as "Restart"
+    startButton.innerText = 'Restart';
+    // hide the next button
+    nextButton.classList.add('hidden');
 }
 
 /**
