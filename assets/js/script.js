@@ -1,3 +1,7 @@
+let currentQuestionIndex = -1;
+let score = 0;
+let incorrect = 0
+
 const startButton = document.getElementById("start");
 const nextButton = document.getElementById("next");
 const questionElement = document.getElementById("question");
