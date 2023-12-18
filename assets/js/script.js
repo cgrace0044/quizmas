@@ -554,11 +554,19 @@ const questions = [
 ];
 
 function runGame() {
-    currentQuestionIndex = 0;
-    score = 0;
-    displayQuestion();
-    startButton.style.display = "none";
-    questionElement.style.backgroundColor = "black";
+    // hide the start button
+    startButton.classList.add('hidden');
+    // show the next button
+    nextButton.classList.remove('hidden');
+
+    questionElement.style.backgroundColor = 'black';
+
+    // initialize game variables
+    score = incorrect = 0;
+    currentQuestionIndex = -1;
+
+    displayCurrentScore();
+    nextQuestion();
 }
 
 function displayQuestion() {
