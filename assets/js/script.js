@@ -625,6 +625,13 @@ function gameOver() {
     nextButton.classList.add('hidden');
 }
 
+function disableFurtherAnswers() {
+    // disable all buttons
+    for (let i = 0; i < answerButtons.children.length; i++) {
+        answerButtons.children[i].disabled = true;
+    }
+}
+
 /**
  * Gets the current score from the DOM and increments it by 1
  */
