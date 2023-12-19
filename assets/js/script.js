@@ -1,15 +1,17 @@
-let currentQuestionIndex = -1
-let score = 0
-let incorrect = 0
+// define various variables to be used in functions
+let currentQuestionIndex = -1;
+let score = 0;
+let incorrect = 0;
 
-const startButton = document.getElementById('start')
-const nextButton = document.getElementById('next')
-const questionElement = document.getElementById('question')
-const answerButtons = document.getElementById('answer-buttons')
+const startButton = document.getElementById('start');
+const nextButton = document.getElementById('next');
+const questionElement = document.getElementById('question');
+const answerButtons = document.getElementById('answer-buttons');
 
-startButton.addEventListener('click', runGame)
-nextButton.addEventListener('click', nextQuestion)
+startButton.addEventListener('click', runGame);
+nextButton.addEventListener('click', nextQuestion);
 
+// questions for the quiz - question plus four possible answers for each
 const questions = [
     {
         question: 'What was the name of Prince Harry\'s memoir released in 2023?',
@@ -553,6 +555,7 @@ const questions = [
     },
 ];
 
+// runGame function - move from start screen to first question
 function runGame() {
     // hide the start button
     startButton.classList.add('hidden');
@@ -569,20 +572,24 @@ function runGame() {
     nextQuestion();
 }
 
+// ensures current score is showing on each screen
 function displayCurrentScore() {
     document.getElementById('score').innerText = score + '';
     document.getElementById('incorrect').innerText = incorrect + '';
 }
 
+// calls the first question to be displayed
 function displayQuestion() {
     // empty current answers
-    answerButtons.innerHTML = ''
+    answerButtons.innerHTML = '';
 
+    // current question variable
     let currentQuestion = questions[currentQuestionIndex];
-     
+
     // load the question
     questionElement.innerHTML = currentQuestion.question;
 
+    // load the corresponding question answers
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement('button');
         button.innerHTML = answer.text;
@@ -596,20 +603,23 @@ function displayQuestion() {
             button.onclick = onClickedIncorrectButton;
         }
 
+        // append answer buttons
         answerButtons.appendChild(button);
     });
 }
 
-function nextQuestion () {
-  if (currentQuestionIndex < questions.length - 1) {
-    currentQuestionIndex += 1
+// triggers the next question to be loaded unless there are no questions left
+function nextQuestion() {
+    if (currentQuestionIndex < questions.length - 1) {
+        currentQuestionIndex += 1;
 
-    displayQuestion()
-  } else {
-    gameOver()
-  }
+        displayQuestion();
+    } else {
+        gameOver();
+    }
 }
 
+// gameover screen shown once all questions have been answered
 function gameOver() {
     // handle game finished
     console.log('game is finished!!!');
@@ -625,6 +635,7 @@ function gameOver() {
     nextButton.classList.add('hidden');
 }
 
+// only allow the user to select one answer for each question
 function disableFurtherAnswers() {
     // disable all buttons
     for (let i = 0; i < answerButtons.children.length; i++) {
@@ -632,9 +643,7 @@ function disableFurtherAnswers() {
     }
 }
 
-/**
- * Gets the current score from the DOM and increments it by 1
- */
+// if answer is correct it goes green on click and increments score by 1
 function onClickedCorrectButton() {
     this.style.backgroundColor = 'green';
     console.log("it is correct!");
@@ -644,9 +653,7 @@ function onClickedCorrectButton() {
     disableFurtherAnswers();
 }
 
-/**
- * Gets the current tally of incorrect answers from the DOM and increments it by 1
- */
+// if answer is incorrect it goes red on click and increments incorrect score by 1
 function onClickedIncorrectButton() {
     this.style.backgroundColor = 'red';
     console.log("it is definitely not correct!");
