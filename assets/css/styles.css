@@ -95,6 +95,7 @@ h1.heading a {
     border-radius: 5px;
     border: none;
     font-size: 1.1rem;
+    cursor: pointer;
 }
 
 #answer-buttons {

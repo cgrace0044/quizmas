@@ -645,8 +645,6 @@ function nextQuestion() {
 
 // gameover screen shown once all questions have been answered
 function gameOver() {
-    // handle game finished
-    console.log('game is finished!!!');
     // empty current answers
     answerButtons.innerHTML = '';
     questionElement.innerHTML = 'Game Over';
@@ -668,7 +666,6 @@ function disableFurtherAnswers() {
 // if answer is correct it goes green on click and increments score by 1
 function onClickedCorrectButton() {
     this.style.backgroundColor = 'green';
-    console.log("it is correct!");
     score += 1;
 
     displayCurrentScore();
@@ -682,7 +679,6 @@ function onClickedCorrectButton() {
 // if answer is incorrect it goes red on click and increments incorrect score by 1
 function onClickedIncorrectButton() {
     this.style.backgroundColor = 'red';
-    console.log("it is definitely not correct!");
     incorrect += 1;
 
     displayCurrentScore();
