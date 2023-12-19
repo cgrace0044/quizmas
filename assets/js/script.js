@@ -558,8 +558,8 @@ function runGame() {
     startButton.classList.add('hidden');
     // show the next button
     nextButton.classList.remove('hidden');
-
-    questionElement.style.backgroundColor = 'black';
+    // show the question
+    questionElement.classList.remove('hidden');
 
     // initialize game variables
     score = incorrect = 0;
@@ -601,7 +601,7 @@ function displayQuestion() {
 }
 
 function nextQuestion () {
-  if (currentQuestionIndex < questionsTemp.length - 1) {
+  if (currentQuestionIndex < questions.length - 1) {
     currentQuestionIndex += 1
 
     displayQuestion()
