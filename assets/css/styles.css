@@ -28,6 +28,9 @@ h1.heading a {
 }
 
 /* Game layout */
+#instructions-page {
+    color: black;
+}
 
 .game-area {
     background-color: white;
@@ -132,11 +135,33 @@ h1.heading a {
     font-size: 1.1rem;
 }
 
+#instructions {
+    width: 45%;
+    height: 30px;
+    letter-spacing: 1.2px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+.exit_btn {
+    border: none;
+    background-color: var(--white);
+    font-size: 1.5rem;
+    float: left;
+}
+
+
 #next:hover {
     border: 3px solid gold;
 }
 
-#start:hover {
+#start:hover, #instructions:hover {
     border: 2px solid black;
 }
 
@@ -150,7 +175,8 @@ h1.heading a {
     }
 
     #start,
-    #next {
+    #next,
+    #instructions {
         font-size: 0.8rem;
     }
 

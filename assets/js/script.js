@@ -7,6 +7,10 @@ const startButton = document.getElementById('start');
 const nextButton = document.getElementById('next');
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
+const startPage = document.getElementById("start-page");
+const instructionsButton = document.getElementById('instructions-button');
+const instructionsPage = document.getElementById('instructions-page');
+const exitButton = document.getElementById("exit-btn");
 
 startButton.addEventListener('click', runGame);
 nextButton.addEventListener('click', nextQuestion);
@@ -555,10 +559,30 @@ const questions = [
     },
 ];
 
+//Calls to open instructions
+instructionsButton.addEventListener("click", openInstructions);
+
+/** Opens and hides
+ * instructions */
+function openInstructions() {
+    instructionsPage.classList.remove("hidden");
+    startPage.classList.add("hidden");
+    //Closes instructions 
+    exitButton.addEventListener("click", () => {
+        instructionsPage.classList.add("hidden");
+        startPage.classList.remove("hidden");
+    });
+}
+
 // runGame function - move from start screen to first question
 function runGame() {
     // hide the start button
     startButton.classList.add('hidden');
+    // hide the instructions button
+    const instructionsButton = document.getElementById('instructions');
+    instructionsButton.classList.add('hidden');
+    // hide the instructions page
+    instructionsPage.classList.add('hidden');
     // show the next button
     nextButton.classList.remove('hidden');
     // show the question
