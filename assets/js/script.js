@@ -563,6 +563,10 @@ function runGame() {
     nextButton.classList.remove('hidden');
     // show the question
     questionElement.classList.remove('hidden');
+    // show the score area
+    const scoreArea = document.getElementsByClassName('score-area')[0];
+    scoreArea.classList.remove('hidden');
+
 
     // initialize game variables
     score = incorrect = 0;
