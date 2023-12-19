@@ -28,8 +28,8 @@ body {
     background-color: white;
     box-sizing: border-box;
     width: 85%;
-    height: 65vh;
-    max-height: 450px;
+    height: 70vh;
+    max-height: 470px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
@@ -101,7 +101,8 @@ body {
     border: 3px solid gold;
 }
 
-#start, #next {
+#start,
+#next {
     width: 90px;
     height: 30px;
     letter-spacing: 1.2px;
@@ -114,16 +115,22 @@ body {
     font-size: 1.1rem;
 }
 
-#start:hover, #next:hover {
+#start:hover,
+#next:hover {
     border: 3px solid gold;
 }
 
 /* Media queries */
 @media (max-width: 576px) {
     .btn {
-        width: 100px;
+        width: 150px;
         height: 40px;
         letter-spacing: normal;
+        font-size: 0.8rem;
+    }
+
+    #start,
+    #next {
         font-size: 0.8rem;
     }
 
@@ -140,6 +147,7 @@ body {
 
     .score-area {
         width: 100%;
+        font-size: 1rem;
     }
 
     .scores {
@@ -162,5 +170,7 @@ body {
     #question {
         padding: 3px;
         font-size: 0.8rem;
-        width: 70%;
+        width: 75%;
+    }
+
 }
