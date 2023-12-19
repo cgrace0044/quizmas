@@ -101,7 +101,6 @@ body {
     border: 3px solid gold;
 }
 
-#start,
 #next {
     width: 90px;
     height: 30px;
@@ -115,9 +114,25 @@ body {
     font-size: 1.1rem;
 }
 
-#start:hover,
+#start {
+    width: 45%;
+    height: 30px;
+    letter-spacing: 1.2px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+}
+
 #next:hover {
     border: 3px solid gold;
+}
+
+#start:hover {
+    border: 2px solid black;
 }
 
 /* Media queries */
