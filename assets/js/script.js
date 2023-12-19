@@ -4,7 +4,6 @@ let score = 0;
 let incorrect = 0;
 
 const startButton = document.getElementById('start');
-const nextButton = document.getElementById('next');
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 const startPage = document.getElementById("start-page");
@@ -13,7 +12,6 @@ const instructionsPage = document.getElementById('instructions-page');
 const exitButton = document.getElementById("exit-btn");
 
 startButton.addEventListener('click', runGame);
-nextButton.addEventListener('click', nextQuestion);
 
 // questions for the quiz - question plus four possible answers for each
 const questions = [
@@ -583,8 +581,6 @@ function runGame() {
     instructionsButton.classList.add('hidden');
     // hide the instructions page
     instructionsPage.classList.add('hidden');
-    // show the next button
-    nextButton.classList.remove('hidden');
     // show the question
     questionElement.classList.remove('hidden');
     // show the score area
@@ -659,8 +655,6 @@ function gameOver() {
     startButton.classList.remove('hidden');
     // but show it now as "Restart"
     startButton.innerText = 'Restart';
-    // hide the next button
-    nextButton.classList.add('hidden');
 }
 
 // only allow the user to select one answer for each question
@@ -679,6 +673,10 @@ function onClickedCorrectButton() {
 
     displayCurrentScore();
     disableFurtherAnswers();
+
+    setTimeout(() => {
+        nextQuestion();
+    }, 2000);
 }
 
 // if answer is incorrect it goes red on click and increments incorrect score by 1
@@ -689,6 +687,10 @@ function onClickedIncorrectButton() {
 
     displayCurrentScore();
     disableFurtherAnswers();
+
+    setTimeout(() => {
+        nextQuestion();
+    }, 2000);
 }
 
 
