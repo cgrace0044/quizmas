@@ -14,7 +14,8 @@ const exitButton = document.getElementById("exit-btn");
 startButton.addEventListener('click', runGame);
 
 // questions for the quiz - question plus four possible answers for each
-const questions = [
+let questions = [];
+const questionsBank = [
     {
         question: 'What was the name of Prince Harry\'s memoir released in 2023?',
         answers: [
@@ -587,10 +588,12 @@ function runGame() {
     const scoreArea = document.getElementsByClassName('score-area')[0];
     scoreArea.classList.remove('hidden');
 
-
     // initialize game variables
     score = incorrect = 0;
     currentQuestionIndex = -1;
+
+    // shuffle questions
+    questions = questionsBank.sort(() => Math.random() - 0.5);
 
     displayCurrentScore();
     nextQuestion();
@@ -613,8 +616,9 @@ function displayQuestion() {
     // load the question
     questionElement.innerHTML = currentQuestion.question;
 
-    // load the corresponding question answers
-    currentQuestion.answers.forEach(answer => {
+    // load the corresponding question answers which are also shuffled
+    const currentQuestionAnswers = currentQuestion.answers.sort(() => Math.random() - 0.5);
+    currentQuestionAnswers.forEach(answer => {
         const button = document.createElement('button');
         button.innerHTML = answer.text;
         button.classList.add('btn');
