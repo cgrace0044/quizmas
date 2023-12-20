@@ -110,19 +110,6 @@ h1.heading a {
     border: 3px solid gold;
 }
 
-#next {
-    width: 90px;
-    height: 30px;
-    letter-spacing: 1.2px;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    background-color: grey;
-    border-radius: 5px;
-    border: none;
-    font-size: 1.1rem;
-}
-
 #start {
     width: 45%;
     height: 30px;
@@ -130,7 +117,7 @@ h1.heading a {
     color: white;
     justify-content: center;
     align-items: center;
-    background-color: red;
+    background-color: blue;
     border-radius: 5px;
     border: none;
     font-size: 1.1rem;
@@ -157,11 +144,6 @@ h1.heading a {
     float: left;
 }
 
-
-#next:hover {
-    border: 3px solid gold;
-}
-
 #start:hover, #instructions:hover {
     border: 2px solid black;
 }
@@ -176,7 +158,6 @@ h1.heading a {
     }
 
     #start,
-    #next,
     #instructions {
         font-size: 0.8rem;
     }
@@ -221,3 +202,35 @@ h1.heading a {
     }
 
 }
+
+@media screen and (min-width: 577px) {
+
+    .score-area {
+        font-size: 1.1rem;
+    }
+
+    .scores {
+        margin: 0.7em auto;
+        display: block;
+        padding: 5px;
+    }
+
+    .btn {
+        letter-spacing: 1.1px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .score-area {
+        font-size: 1.2rem;
+    }
+
+    .scores {
+        display: inline-block;
+        padding: 25px;
+    }
+}
+
+
+
