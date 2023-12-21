@@ -29,8 +29,6 @@ Colour palette from Coolors
 
 There are a few subtle Christmas images included on the site including the favicon and some Font Awesome icons:
 
-![Candy Cane](docs/readme-images/candy.webp)
+![Christmas Imagery](docs/readme-images/christmas_imagery.webp)
 
-![Presents](docs/readme-images/presents.webp)
 
-![Favicon](docs/readme-images/favicon.webp)
