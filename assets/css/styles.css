@@ -40,13 +40,14 @@ h1.heading a {
     line-height: 1.4rem;
     margin-left: auto;
     margin-right: auto;
-    border:  1px solid grey;
+    border: 1px solid grey;
     border-radius: 5px;
     padding: 5px;
+    vertical-align: center;
 }
 
-#greeting{
-    color:black;
+#greeting {
+    color: black;
     margin-top: 40px;
 }
 
@@ -162,7 +163,8 @@ h1.heading a {
     float: right;
 }
 
-#start:hover, #instructions:hover {
+#start:hover,
+#instructions:hover {
     border: 2px solid black;
 }
 
@@ -172,8 +174,9 @@ h1.heading a {
         font-size: 0.8rem;
         padding: 2px;
         line-height: 1.2rem;
+        margin-bottom: 30px;
     }
-    
+
     #greeting {
         font-size: 0.8rem;
     }
@@ -218,7 +221,7 @@ h1.heading a {
     }
 
     .game-area {
-        height: 50vh;
+        height: auto;
         width: 90%;
         padding: 0.5%;
     }
@@ -259,6 +262,3 @@ h1.heading a {
         padding: 25px;
     }
 }
-
-
-
