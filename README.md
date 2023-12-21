@@ -1,39 +1,28 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Quizmas
 
-Welcome,
+Quizmas is a multiply choice 2023 general knowledge quiz for adults to play over Christmas. There are 60 questions and the aim of the game is to get as many questions correct as possible. The game is designed to be fun and engaging with the use of bright colourful imagery.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This game is a great way to improve your knowledge of 2023 current affairs.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+The live link can be found here - [Quizmas](https://cgrace0044.github.io/quizmas/index.html)
 
-## Codeanywhere Reminders
+ADD RESPONSIVE IMAGE
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+## Site Owner Goals
 
-`python3 -m http.server`
+- To provide the user with an easy to navigate game that is both fun and educational.
+- To present the user with a website that is visually appealing and fully responsive.
+- To entice the user to return to the game to improve their score.
+- To encourage the user to share the game with friends and family to see who can get the highest score.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## User Stories
+ADD USER STORIES HERE
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Design and Colour Scheme
+The imagery and colour scheme of the site were both given careful consideration to ensure they compliment each other. The imagery used in the game is very important to the overall experience of the user.
 
-`http_server`
+- Given that the game will be predominently played over Christmas 2023, Christmas colours were chosen.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Colour palette from Coolors
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
+![Colour Palette](docs/readme-images/colour_palette.webp)
