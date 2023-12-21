@@ -40,7 +40,7 @@ h1.heading a {
     line-height: 1.4rem;
     margin-left: auto;
     margin-right: auto;
-    border:  1px solid black;
+    border:  1px solid grey;
     border-radius: 5px;
     padding: 5px;
 }
@@ -174,7 +174,10 @@ h1.heading a {
         line-height: 1.2rem;
     }
     
-    
+    #greeting {
+        font-size: 0.8rem;
+    }
+
     .btn {
         width: 150px;
         height: 40px;
@@ -215,7 +218,7 @@ h1.heading a {
     }
 
     .game-area {
-        height: 90vh;
+        height: 50vh;
         width: 90%;
         padding: 0.5%;
     }

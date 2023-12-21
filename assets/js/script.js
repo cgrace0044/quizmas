@@ -575,11 +575,8 @@ function openInstructions() {
 
 // runGame function - move from start screen to first question
 function runGame() {
-    // hide the start button
-    startButton.classList.add('hidden');
-    // hide the instructions button
-    const instructionsButton = document.getElementById('instructions');
-    instructionsButton.classList.add('hidden');
+    // hide the start page
+    startPage.classList.add('hidden');
     // hide the instructions page
     instructionsPage.classList.add('hidden');
     // show the question
