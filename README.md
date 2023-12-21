@@ -66,3 +66,8 @@ The landing page of the website has a very simple layout which includes a H1 hea
 If the user clicks the "Instructions" button the user can read the main rules of the game. The 'X' button will take them back to the welcome area.
 
 ![Instructions](docs/readme-images/instructions.webp)
+
+### Game Area
+
+![Quiz Screen Large Screens](docs/readme-images/quiz_screen_largerscreens.webp)
+![Quiz Screen Smaller Screens](docs/readme-images/quiz_screen_smallerscreens.webp)
