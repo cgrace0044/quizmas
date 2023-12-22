@@ -10,6 +10,7 @@ const startPage = document.getElementById("start-page");
 const instructionsButton = document.getElementById('instructions-button');
 const instructionsPage = document.getElementById('instructions-page');
 const exitButton = document.getElementById("exit-btn");
+const greeting = document.getElementById('greeting');
 
 startButton.addEventListener('click', runGame);
 
@@ -575,10 +576,14 @@ function openInstructions() {
 
 // runGame function - move from start screen to first question
 function runGame() {
-    // hide the start page
-    startPage.classList.add('hidden');
+    // hide the start button
+    startButton.classList.add('hidden');
+    // hide the instructions button
+    instructionsButton.classList.add('hidden');
     // hide the instructions page
     instructionsPage.classList.add('hidden');
+    // hide the greeting
+    greeting.classList.add('hidden');
     // show the question
     questionElement.classList.remove('hidden');
     // show the score area

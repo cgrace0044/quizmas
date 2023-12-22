@@ -23,7 +23,7 @@ ADD RESPONSIVE IMAGE
   - As a first time user I want to be able to intuitively navigate the game, play the game, see my score and restart the game once it ends.
   - As a first time user I want to have fun and test my knowledge of 2023.
 
-- ### Returning/Frequent
+- ### Returning User
 
   - As a returning user I want to be able to play the same game but with the questions in a different order.
   - As a returning user I want to be able to improve on my previous score.
