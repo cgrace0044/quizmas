@@ -17,7 +17,16 @@ ADD RESPONSIVE IMAGE
 
 ## User Stories
 
-ADD USER STORIES HERE
+- ### First Time User
+
+  - As a first time user I want to understand the main purpose of the game
+  - As a first time user I want to be able to intuitively navigate the game, play the game, see my score and restart the game once it ends.
+  - As a first time user I want to have fun and test my knowledge of 2023.
+
+- ### Returning/Frequent
+
+  - As a returning user I want to be able to play the same game but with the questions in a different order.
+  - As a returning user I want to be able to improve on my previous score.
 
 ## Design and Colour Scheme
 
@@ -147,3 +156,93 @@ INPUT FINAL LIGHTHOUSE SCREENSHOT HERE DESKTOP
 ### Device Testing
 
 - The website was viewed on a variety of devices such as Desktop, Laptop, mobile and tablet to ensure responsiveness on various screen sizes in both portrait and landscape mode. The website performed as intended. The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes.
+
+### Fixed Bugs
+
+#### Next Button
+
+- Originally I had a next button which called the next question.
+- This required the user to make a lot of clicks - the next button also moved depending on the length of the question.
+- To improve the user experience I got rid of the next button and implemented a timer function whereby the next question was automatically displayed following a correct/incorrect answer to the previous question.
+
+#### Start Button
+
+- Originally the start button was red but this caused a poor accessibility score. Once I changed the colour the accessibility score was 100%.
+
+#### Answer Buttons
+
+- For some time there was an issue where the next question function appended its answers along with the answers of the previous question.
+- This meant eight answers were showing - four of which were irrelevant to the current question.
+- In order to fix this I had to empty the answers' previous HTML using answerButtons.innerHTML = ''.
+
+### Known Bugs
+
+There are no known bugs.
+
+## Technologies Used
+
+### Languages
+
+- JavaScript
+- HTML5
+- CSS3
+
+### Frameworks - Libraries - Programs Used
+
+- [Am I Responsive](http://ami.responsivedesign.is/) - Used to verify responsiveness of website on different devices.
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
+- [Font Awesome](https://fontawesome.com/) - Used for icons in information bar.
+- [GitHub](https://github.com/) - Used for version control and hosting.
+- [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
+- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+- [Coolors](https://coolors.co/) - Used to create colour palette.
+- [Favicon](https://favicon.io/) - Used to create the favicon.
+
+## Deployment
+
+The project was deployed using GitHub pages. The method followed to deploy the site was as follows:
+
+1. I went to the settings tab in my Github repository.
+2. On the left-hand side-bar in the code and automation section I selected Pages.
+3. I selected Source - Deploy from branch.
+4. The main branch was selected and the folder was set to root.
+5. Under branch I clicked save.
+6. Back in the code tab in the Environments section I clicked on Github Pages.
+7. Finally I clicked on view deployments to see the live site.
+
+The live link can be found here - [Quizmas](https://cgrace0044.github.io/quizmas/index.html)
+
+## Cloning
+
+To clone this repository follow the below steps:
+
+1. Locate the repository at this link [Quizmas Repository](https://github.com/cgrace0044/quizmas).
+2. Under **'Code'**, see the different cloning options, HTTPS, SSH, and GitHub CLI. Click the prefered cloning option, and then copy the link provided.
+3. Open **Terminal**.
+4. In Terminal, change the current working directory to the desired location of the cloned directory.
+5. Type **'git clone'**, and then paste the URL copied from GitHub earlier.
+6. Type **'Enter'** to create the local clone.
+
+## Credits
+
+### Content
+
+The inspiration for this game came from my family who love playing quizzes over the Christmas holidays. During Christmas 2023 we played this quiz and everyone really enjoyed it.
+The quiz questions came from various 2023 quizzes that I found online including:
+
+- [Quiz of the Year 2023](https://www.youtube.com/watch?v=zYmeDwFu0N8)
+- [The 2023 Quiz](https://www.youtube.com/watch?v=eEe_LCujyF0)
+
+### Resources Used
+
+- [W3Schools](https://www.w3schools.com/)  
+- [Stack Overflow](https://stackoverflow.com/)
+- I watched a number of videos on Youtube in relation to creating a quiz using HTML, CSS and Javascript including:
+  - Web Deb Simplified [Build a Quiz With Javascript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1317s).
+  - James Q Quick [Build a Quiz App](https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF).
+  - Great Stack [How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=357s).
+- I used similar code to The Code Institute Love Maths Project for setting up the game-area and also the score area.
+
+## Acknowledgments
+
+My mentor Antonio for his support and advice.
