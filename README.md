@@ -54,20 +54,96 @@ The site is a single page with 4 main sections:
 
 ### Home Page
 
-The landing page of the website has a very simple layout which includes a H1 heading stating the name of the game and three large colourful interactive buttons that are easy for kids to select. The user is given two options to choose from:
+The landing page of the website has a very simple layout which includes a H1 heading stating the name of the game and two buttons:
 
 - Start
 - Instructions
+
+The H1 heading contains an link to the landing page.
 
 ![Landing Page](docs/readme-images/landing_page.webp)
 
 ### Instructions
 
-If the user clicks the "Instructions" button the user can read the main rules of the game. The 'X' button will take them back to the welcome area.
+If the user clicks the "Instructions" button the user can read the main rules of the game. The 'X' button will take them back to the landing page.
 
 ![Instructions](docs/readme-images/instructions.webp)
 
 ### Game Area
 
+- Once the user clicks start on the landing page the first question together with four answers are displayed.
+- If the user clicks the correct answer it turns green, otherwise it runs red.
+- Once an answer has been clicked the next question will be automatically displayed after a short pause of two seconds.
+- As the game progresses a running correct/incorrect answer score is displayed below the game-area.
+- A 'Math Random' function was used so that the questions are shuffled.
+- The order of the answers to a corresponding question are also shuffled.
+
 ![Quiz Screen Large Screens](docs/readme-images/quiz_screen_largerscreens.webp)
+
 ![Quiz Screen Smaller Screens](docs/readme-images/quiz_screen_smallerscreens.webp)
+
+### Game Over
+
+- Once the player has answered 60 questions the Gameover screen will be displayed.
+- This screen simply states 'gameover' and there is an opportunity to restart the game.
+- The final tally of correct and incorrect answers is also shown on this screen.
+
+INPUT THE GAMEOVER SCREEN
+
+### Features Left to Implement
+
+- Ability for the user to input a username
+- A leaderboard
+  
+## Testing
+
+### Validator Testing
+
+HTML
+
+- No errors were returned when passing through the official W3C Markup Validator
+INPUT SCREENSHOT HERE
+
+CSS
+
+- No errors were found when passing through the official W3C CSS Validator
+INPUT SCREENSHOT HERE
+  
+Javascript
+
+- No errors or warnings were returned.
+INPUT SCREENSHOT HERE
+
+### Accessibility
+
+- The site achieved a Lighthouse accessibility score of 100% on both mobile and desktop which confirms that the colours and fonts chosen are easy to read and accessible
+
+Mobile Lighthouse Score
+
+INPUT FINAL LIGHTHOUSE SCREENSHOT HERE
+
+Desktop Lighthouse Score
+INPUT FINAL LIGHTHOUSE SCREENSHOT HERE DESKTOP
+
+### Button Testing
+
+- All buttons were tested manually to ensure the user is directed to the correct section of the website and functions run as intended.
+
+### Game Testing
+
+- The game was thoroughly tested by friends and family to ensure that everything worked as intended including the following:
+  - Questions were shuffled so that they don't appear in the same order.
+  - Answers to each corresponding questions were shuffled.
+  - The game ends once 60 questions have been answered.
+  - The user can only select one answer to each question.
+  - The total correct and incorrect scores sum to 60 at the end of the game.
+  - The next question is automatically displayed once the user has clicked an answer. There is a short timelag of two seconds.
+  - Once the game is finished there is an opportunity to restart the game.
+
+### Browser Testing
+
+- The Website was tested on Google Chrome, Firefox, Microsoft Edge, Safari browsers with no issues noted.
+
+### Device Testing
+
+- The website was viewed on a variety of devices such as Desktop, Laptop, mobile and tablet to ensure responsiveness on various screen sizes in both portrait and landscape mode. The website performed as intended. The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes.
