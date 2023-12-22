@@ -223,6 +223,7 @@ h1.heading a {
     .game-area {
         width: 90%;
         padding: 0.5%;
+        height: 100vh;
     }
 
     #question {
