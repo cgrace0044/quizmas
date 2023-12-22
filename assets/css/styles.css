@@ -221,7 +221,7 @@ h1.heading a {
     }
 
     .game-area {
-        height: auto;
+        height: 100vh;
         width: 90%;
         padding: 0.5%;
     }
