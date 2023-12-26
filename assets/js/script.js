@@ -1,19 +1,3 @@
-// define various variables to be used in functions
-let currentQuestionIndex = -1;
-let score = 0;
-let incorrect = 0;
-
-const startButton = document.getElementById('start');
-const questionElement = document.getElementById('question');
-const answerButtons = document.getElementById('answer-buttons');
-const startPage = document.getElementById("start-page");
-const instructionsButton = document.getElementById('instructions-button');
-const instructionsPage = document.getElementById('instructions-page');
-const exitButton = document.getElementById("exit-btn");
-const greeting = document.getElementById('greeting');
-
-startButton.addEventListener('click', runGame);
-
 // questions for the quiz - question plus four possible answers for each
 let questions = [];
 const questionsBank = [
@@ -559,8 +543,25 @@ const questionsBank = [
     },
 ];
 
-//Calls to open instructions
+// define various variables to be used in functions
+const startButton = document.getElementById('start');
+const questionElement = document.getElementById('question');
+const answerButtons = document.getElementById('answer-buttons');
+const startPage = document.getElementById("start-page");
+const instructionsButton = document.getElementById('instructions-button');
+const instructionsPage = document.getElementById('instructions-page');
+const exitButton = document.getElementById("exit-btn");
+const greeting = document.getElementById('greeting');
+
+let currentQuestionIndex = -1;
+let score = 0;
+let incorrect = 0;
+
+// prepare click handlers
+startButton.addEventListener('click', runGame);
+// Calls to open instructions
 instructionsButton.addEventListener("click", openInstructions);
+
 
 /** Opens and hides
  * instructions */
