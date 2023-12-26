@@ -657,15 +657,17 @@ function nextQuestion() {
 function gameOver() {
     // empty current answers
     answerButtons.innerHTML = '';
-    questionElement.innerHTML = 'Game Over';
 
     // show the start button
     startButton.classList.remove('hidden');
     // but show it now as "Restart"
-    startButton.innerText = 'Restart';
+    startButton.innerText = 'Gameover Restart?';
 
     // hide questionArea again
     questionArea.classList.add('hidden');
+
+    // hide questionElement again
+    questionElement.classList.add('hidden');
 }
 
 // only allow the user to select one answer for each question
