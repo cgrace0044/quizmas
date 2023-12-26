@@ -38,11 +38,13 @@
       href="assets/favicon/favicon-16x16.png"
     >
 
-    <!-- Stylesheet -->
+    <!-- CSS Stylesheet -->
     <link rel="stylesheet" href="assets/css/styles.css">
   </head>
 
   <body>
+    <!--Body-->
+    <!--Heading Quizmas-->
     <h1 class="heading">
       <i class="fa-solid fa-gifts"></i> <a href="index.html">Quizmas</a>
       <i class="fa-solid fa-gifts"></i>
@@ -50,52 +52,57 @@
 
     <!--Game Area: Questions and Answers-->
     <div class="game-area">
-        <div class="question-area"></div>
-        <div id="question" class="hidden"></div>
-        <div id="answer-buttons"></div>
-    
-    <!--Start Page--> 
-    <div id="start-page" class="page">
-      <div id="start-button">
-        <button id="start">Start</button>
+      <div class="question-area"></div>
+      <div id="question" class="hidden"></div>
+      <div id="answer-buttons"></div>
+
+      <!--Start Page-->
+      <div id="start-page" class="page">
+        <div id="start-button">
+          <button id="start">Start</button>
+        </div>
+        <div id="instructions-button">
+          <button id="instructions">Instructions</button>
+        </div>
+        <div id="greeting">
+          <p>Do you love quizzes at Christmas?</p>
+          <p>Test your knowledge of 2023 with Quizmas!</p>
+        </div>
       </div>
-      <div id="instructions-button">
-        <button id="instructions">Instructions</button>
+
+      <!--Instructions page: hidden, open and close with button-->
+      <div id="instructions-page" class="page hidden">
+        <div>
+          <button id="exit-btn" class="exit_btn">
+            <i class="fa-solid fa-x"></i>
+          </button>
+        </div>
+        <div id="rules">
+          <h2>
+            <i class="fa-solid fa-candy-cane" style="color: #ee1717"></i> Rules
+            <i class="fa-solid fa-candy-cane" style="color: #ee1717"></i>
+          </h2>
+          <p>There are 60 questions.</p>
+          <p>Click on the answer you think is right to score a point.</p>
+          <p>Your score will be displayed at the bottom of the page.</p>
+          <p>The next question is automatically displayed.</p>
+        </div>
+      </div>
     </div>
-    <div id="greeting">
-        <p>Do you love quizzes at Christmas?</p>
-        <p>Test your knowledge of 2023 with Quizmas!</p>
-    </div>
-    </div>
-    
-    <!--Instructions page: hidden, open and close with button-->
-        <div id="instructions-page" class="page hidden">
-            <div>
-                <button id="exit-btn" class="exit_btn"><i class="fa-solid fa-x"></i></button>
-            </div>
-            <div id="greeting">
-                <h2><i class="fa-solid fa-candy-cane" style="color: #ee1717;"></i>  Rules  <i class="fa-solid fa-candy-cane" style="color: #ee1717;"></i></h2>
-                <p>There are 60 questions.</p>
-                <p>Click on the answer you think is right to score a point.</p>
-                <p>Your score will be displayed at the bottom of the page.</p>
-                <p>The next question is automatically displayed.</p>
-            </div>
-            </div>
-            </div>
-       
+
     <!--Scores-->
     <div class="score-area hidden">
       <p class="scores">Correct Answers <span id="score">0</span></p>
       <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
     </div>
 
-    <!--Font Awesome kit-->
+    <!--Font Awesome Script-->
     <script
       src="https://kit.fontawesome.com/27e5dc9fca.js"
       crossorigin="anonymous"
     ></script>
 
-    <!--Javascript-->
+    <!--JavaScript Script-->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
