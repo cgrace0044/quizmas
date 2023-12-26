@@ -33,6 +33,10 @@ h1.heading a {
 }
 
 /* Game layout */
+/* Start page */
+#start-page {
+    margin-top: 60px;
+}
 
 /* Instructions page */
 #instructions-page {
@@ -45,6 +49,7 @@ h1.heading a {
     border: 1px solid grey;
     border-radius: 5px;
     padding: 5px;
+    margin-top: 60px;
 }
 
 #greeting {
