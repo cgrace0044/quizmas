@@ -129,10 +129,10 @@ INPUT SCREENSHOT HERE
 
 Mobile Lighthouse Score
 
-INPUT FINAL LIGHTHOUSE SCREENSHOT HERE
+![Mobile Lighthouse Score](docs/readme-images/mobile_lighthouse_score.png)
 
 Desktop Lighthouse Score
-INPUT FINAL LIGHTHOUSE SCREENSHOT HERE DESKTOP
+![Desktop Lighthouse Score](docs/readme-images/desktop_lighthouse_score.webp)
 
 ### Button Testing
 
