@@ -683,11 +683,31 @@ function onClickedCorrectButton() {
     }, 2000);
 }
 
+function displayCorrectAnswer() {
+    // current question variable
+    const currentQuestion = questions[currentQuestionIndex];
+    // find the correct answer in the answers array
+    const correctAnswer = currentQuestion.answers.find((answer) => answer.correct);
+    // iterate over all the buttons and mark as green the correct one
+    for (let i = 0; i < answerButtons.children.length; i++) {
+        let button = answerButtons.children[i];
+        if (button.textContent === correctAnswer.text) {
+            button.style.backgroundColor = 'green';
+            break;
+        }
+    }
+}
+
 // if answer is incorrect it goes red on click and increments incorrect score by 1
 function onClickedIncorrectButton() {
+    // mark this button as red
     this.style.backgroundColor = 'red';
-    incorrect += 1;
+    // mark the correct one as green in 300ms
+    setTimeout(() => {
+        displayCorrectAnswer();
+    }, 300);
 
+    incorrect += 1;
     displayCurrentScore();
     disableFurtherAnswers();
 
