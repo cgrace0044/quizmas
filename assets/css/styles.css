@@ -35,7 +35,9 @@ h1.heading a {
 /* Game layout */
 /* Start page */
 #start-page {
-    margin-top: 60px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
 }
 
 /* Instructions page */
@@ -49,7 +51,9 @@ h1.heading a {
     border: 1px solid grey;
     border-radius: 5px;
     padding: 5px;
-    margin-top: 60px;
+    position: relative;
+    top: 40%;
+    transform: translateY(-50%);
 }
 
 #greeting {
