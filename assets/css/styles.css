@@ -1,7 +1,7 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300;400&family=Oswald:wght@300;600&display=swap');
 
-/* Global style */
+/* Global styles */
 
 body {
     background-color: green;
@@ -33,6 +33,7 @@ h1.heading a {
 }
 
 /* Game layout */
+/* Instructions page */
 #instructions-page {
     color: black;
     width: 60%;
@@ -43,7 +44,6 @@ h1.heading a {
     border: 1px solid grey;
     border-radius: 5px;
     padding: 5px;
-    vertical-align: center;
 }
 
 #greeting {
@@ -51,6 +51,7 @@ h1.heading a {
     margin-top: 40px;
 }
 
+/* Game-area and questions */
 .game-area {
     background-color: white;
     box-sizing: border-box;
@@ -82,6 +83,7 @@ h1.heading a {
     padding: 10px;
 }
 
+/* Score-area */
 .score-area {
     margin: 5px auto;
     width: 60%;
@@ -170,6 +172,13 @@ h1.heading a {
 
 /* Media queries */
 @media (max-width: 576px) {
+
+    /* Heading */
+    .heading {
+        font-size: 1.6rem;
+    }
+
+    /* Instructions page */
     #instructions-page {
         font-size: 0.8rem;
         padding: 2px;
@@ -181,6 +190,37 @@ h1.heading a {
         font-size: 0.8rem;
     }
 
+    /* Game-area and questions */
+    .game-area {
+        width: 90%;
+        padding: 0.5%;
+        height: 100vh;
+    }
+
+    .question-area {
+        padding: 10% 0;
+        width: 100%;
+    }
+
+    #question {
+        padding: 3px;
+        font-size: 0.8rem;
+        width: 75%;
+    }
+
+    /* Score-Area */
+    .score-area {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
+
+    /* Buttons */
     .btn {
         width: 150px;
         height: 40px;
@@ -193,10 +233,6 @@ h1.heading a {
         font-size: 0.8rem;
     }
 
-    .heading {
-        font-size: 1.6rem;
-    }
-
     #answer-buttons {
         display: grid;
         grid-template-columns: repeat(1, auto);
@@ -204,38 +240,11 @@ h1.heading a {
         margin-top: 10px;
     }
 
-    .score-area {
-        width: 100%;
-        font-size: 1rem;
-    }
-
-    .scores {
-        margin: 0.5em auto;
-        display: block;
-        padding: 5px;
-    }
-
-    .question-area {
-        padding: 10% 0;
-        width: 100%;
-    }
-
-    .game-area {
-        width: 90%;
-        padding: 0.5%;
-        height: 100vh;
-    }
-
-    #question {
-        padding: 3px;
-        font-size: 0.8rem;
-        width: 75%;
-    }
-
 }
 
 @media screen and (min-width: 577px) {
 
+    /* Score-area */
     .score-area {
         font-size: 1.1rem;
     }
@@ -246,6 +255,7 @@ h1.heading a {
         padding: 5px;
     }
 
+    /* Buttons */
     .btn {
         letter-spacing: 1.1px;
         font-size: 1rem;
@@ -253,6 +263,8 @@ h1.heading a {
 }
 
 @media screen and (min-width: 1000px) {
+
+    /* Score-area */
     .score-area {
         font-size: 1.2rem;
     }

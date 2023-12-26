@@ -694,11 +694,3 @@ function onClickedIncorrectButton() {
         nextQuestion();
     }, 2000);
 }
-
-
-
-
-
-
-
-
