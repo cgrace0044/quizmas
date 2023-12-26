@@ -33,6 +33,7 @@ h1.heading a {
 }
 
 /* Game layout */
+
 /* Instructions page */
 #instructions-page {
     color: black;
@@ -52,7 +53,7 @@ h1.heading a {
 }
 
 /* Game-area and questions */
-.game-area {
+#game-area {
     background-color: white;
     box-sizing: border-box;
     width: 85%;
@@ -66,7 +67,7 @@ h1.heading a {
     box-shadow: 0 0 10px 2px;
 }
 
-.question-area {
+#question-area {
     width: 50%;
     font-size: 2rem;
     margin: auto;
@@ -84,7 +85,7 @@ h1.heading a {
 }
 
 /* Score-area */
-.score-area {
+#score-area {
     margin: 5px auto;
     width: 60%;
     font-size: 1.2rem;
@@ -191,13 +192,13 @@ h1.heading a {
     }
 
     /* Game-area and questions */
-    .game-area {
+    #game-area {
         width: 90%;
         padding: 0.5%;
         height: 100vh;
     }
 
-    .question-area {
+    #question-area {
         padding: 10% 0;
         width: 100%;
     }
@@ -209,7 +210,7 @@ h1.heading a {
     }
 
     /* Score-Area */
-    .score-area {
+    #score-area {
         width: 100%;
         font-size: 1rem;
     }
@@ -245,7 +246,7 @@ h1.heading a {
 @media screen and (min-width: 577px) {
 
     /* Score-area */
-    .score-area {
+    #score-area {
         font-size: 1.1rem;
     }
 
@@ -265,7 +266,7 @@ h1.heading a {
 @media screen and (min-width: 1000px) {
 
     /* Score-area */
-    .score-area {
+    #score-area {
         font-size: 1.2rem;
     }
 

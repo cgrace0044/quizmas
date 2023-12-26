@@ -545,6 +545,7 @@ const questionsBank = [
 
 // define various variables to be used in functions
 const startButton = document.getElementById('start');
+const questionArea = document.getElementById('question-area');
 const questionElement = document.getElementById('question');
 const answerButtons = document.getElementById('answer-buttons');
 const startPage = document.getElementById("start-page");
@@ -585,10 +586,12 @@ function runGame() {
     instructionsPage.classList.add('hidden');
     // hide the greeting
     greeting.classList.add('hidden');
+    // show the questionArea
+    questionArea.classList.remove('hidden');
     // show the question
     questionElement.classList.remove('hidden');
     // show the score area
-    const scoreArea = document.getElementsByClassName('score-area')[0];
+    const scoreArea = document.getElementById('score-area');
     scoreArea.classList.remove('hidden');
 
     // initialize game variables
@@ -660,6 +663,9 @@ function gameOver() {
     startButton.classList.remove('hidden');
     // but show it now as "Restart"
     startButton.innerText = 'Restart';
+
+    // hide questionArea again
+    questionArea.classList.add('hidden');
 }
 
 // only allow the user to select one answer for each question
