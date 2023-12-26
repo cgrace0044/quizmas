@@ -6,7 +6,7 @@ This game is a great way to improve your knowledge of 2023 current affairs.
 
 The live link can be found here - [Quizmas](https://cgrace0044.github.io/quizmas/index.html)
 
-ADD RESPONSIVE IMAGE
+![Quizmas Am I Responsive Image](docs/readme-images/amiresponsive.webp)
 
 ## Site Owner Goals
 
