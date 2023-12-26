@@ -162,7 +162,7 @@ const questionsBank = [
         ]
     },
     {
-        question: 'What was the date of Kind Charles\' Coronation?',
+        question: 'What was the date of King Charles\' Coronation?',
         answers: [
             { text: 'June 5th 2023', correct: false },
             { text: 'February 4th 2023', correct: false },
@@ -477,7 +477,7 @@ const questionsBank = [
         ]
     },
     {
-        question: 'Who stunned Novak Djokovic to win the 2023 men\'s singles title?',
+        question: 'Who stunned Novak Djokovic to win the 2023 Wimbledon men\'s singles title?',
         answers: [
             { text: 'Andrey Rublev', correct: false },
             { text: 'Stefanos Tsitsipas', correct: false },

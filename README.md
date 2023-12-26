@@ -97,7 +97,7 @@ If the user clicks the "Instructions" button the user can read the main rules of
 - This screen simply states 'gameover' and there is an opportunity to restart the game.
 - The final tally of correct and incorrect answers is also shown on this screen.
 
-INPUT THE GAMEOVER SCREEN
+![Gameover Screen](docs/readme-images/gameover_screen.webp)
 
 ### Features Left to Implement
 
