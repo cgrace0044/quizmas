@@ -141,11 +141,11 @@ Javascript
 
 - The site achieved a Lighthouse accessibility score of 100% on both mobile and desktop which confirms that the colours and fonts chosen are easy to read and accessible
 
-Mobile Lighthouse Score
+#### Mobile Lighthouse Score
 
 ![Mobile Lighthouse Score](docs/readme-images/mobile_lighthouse_score.png)
 
-Desktop Lighthouse Score
+#### Desktop Lighthouse Score
 ![Desktop Lighthouse Score](docs/readme-images/desktop_lighthouse_score.webp)
 
 ### Button Testing
