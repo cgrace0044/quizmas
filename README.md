@@ -10,11 +10,11 @@ How the game appears on multiple devices can be seen below. The first picture sh
 
 ### Homescreen
 
-![Quizmas Am I Responsive Image Homepage](amiresponsive_homescreen.webp)
+![Quizmas Am I Responsive Image Homepage](docs/readme-images/amiresponsive_homescreen.webp)
 
 ### Quiz-screen
 
-![Quizmas Am I Responsive Image Quiz-page](amiresponsive_quiz.webp)
+![Quizmas Am I Responsive Image Quiz-page](docs/readme-images/amiresponsive_quiz.webp)
 
 ## Site Owner Goals
 
@@ -77,22 +77,23 @@ The landing page of the website has a very simple layout which includes a H1 hea
 
 The H1 heading contains a link to the landing page.
 
-![Landing Page](docs/readme-images/landing_page.webp)
+![Landing Page](docs/readme-images/landing_page_tablet.webp)
 
 ### Instructions
 
 If the user clicks the "Instructions" button the user can read the main rules of the game. The 'X' button will take them back to the landing page.
 
-![Instructions](docs/readme-images/instructions.webp)
+![Instructions](docs/readme-images/instructions_tablet.webp)
 
 ### Game Area
 
 - Once the user clicks start on the landing page the first question together with four answers are displayed.
-- If the user clicks the correct answer it turns green, otherwise it runs red.
+- If the user clicks the correct answer it turns green.
+- If the incorrect answer is selected it turns red and the correct answer shows up miliseconds later as green.
 - Once an answer has been clicked the next question will be automatically displayed after a short pause of two seconds.
 - As the game progresses a running correct/incorrect answer score is displayed below the game-area.
 - A 'Math Random' function was used so that the questions are shuffled.
-- The order of the answers to a corresponding question are also shuffled.
+- The order of the answers to a corresponding question are also shuffled so that it is more difficult to memorise answers.
 
 ![Quiz Screen Large Screens](docs/readme-images/quiz_screen_largerscreens.webp)
 
@@ -104,12 +105,13 @@ If the user clicks the "Instructions" button the user can read the main rules of
 - This screen simply states 'gameover' and there is an opportunity to restart the game.
 - The final tally of correct and incorrect answers is also shown on this screen.
 
-![Gameover Screen](docs/readme-images/gameover_screen.webp)
+![Gameover Screen](docs/readme-images/gameover.webp)
 
 ### Features Left to Implement
 
 - Ability for the user to input a username
 - A leaderboard
+- In the future it would be good to have different quiz subjects e.g. geogrpahy, history etc.
   
 ## Testing
 

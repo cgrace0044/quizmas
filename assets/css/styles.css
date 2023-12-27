@@ -190,9 +190,9 @@ h1.heading a {
 
     /* Instructions page */
     #instructions-page {
-        font-size: 0.7rem;
-        padding: 2px;
-        line-height: 1.1rem;
+        font-size: 0.65rem;
+        padding: 1px;
+        line-height: 1rem;
         margin-bottom: 30px;
     }
 
