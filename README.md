@@ -1,25 +1,32 @@
 # Quizmas
 
-Quizmas is a multiply choice 2023 general knowledge quiz for adults to play over Christmas. There are 60 questions and the aim of the game is to get as many questions correct as possible. The game is designed to be fun and engaging with the use of bright colourful imagery.
+Quizmas is a multiple choice 2023 general knowledge quiz for adults to play over Christmas. There are 60 questions and the aim of the game is to get as many questions correct as possible. The game is designed to be fun and engaging.
 
 This game is a great way to improve your knowledge of 2023 current affairs.
 
 The live link can be found here - [Quizmas](https://cgrace0044.github.io/quizmas/index.html)
 
-![Quizmas Am I Responsive Image](docs/readme-images/amiresponsive.webp)
+How the game appears on multiple devices can be seen below. The first picture shows the homescreen and the second the quiz-screen:
+
+### Homescreen
+
+![Quizmas Am I Responsive Image Homepage](amiresponsive_homescreen.webp)
+
+### Quiz-screen
+
+![Quizmas Am I Responsive Image Quiz-page](amiresponsive_quiz.webp)
 
 ## Site Owner Goals
 
 - To provide the user with an easy to navigate game that is both fun and educational.
 - To present the user with a website that is visually appealing and fully responsive.
 - To entice the user to return to the game to improve their score.
-- To encourage the user to share the game with friends and family to see who can get the highest score.
 
 ## User Stories
 
 - ### First Time User
 
-  - As a first time user I want to understand the main purpose of the game
+  - As a first time user I want to understand the main purpose of the game.
   - As a first time user I want to be able to intuitively navigate the game, play the game, see my score and restart the game once it ends.
   - As a first time user I want to have fun and test my knowledge of 2023.
 
@@ -46,13 +53,13 @@ Great care was taken to establish a good contrast between background colours and
 
 ### Fonts
 
-The Montserrat font is the main font used throughout the whole website. This font was imported via [Google Fonts](https://fonts.google.com/). 
+The Montserrat font is the main font used throughout the whole website. This font was imported via [Google Fonts](https://fonts.google.com/).
 
 Sans Serif is used as a backup font, in case for any reason the main font isn't being imported into the site correctly.
 
 ### Layout
 
-The site is a single page with 4 main sections:
+The site is a single page with 4 main areas:
 
 - Start screen
 - Instructions screen
@@ -68,7 +75,7 @@ The landing page of the website has a very simple layout which includes a H1 hea
 - Start
 - Instructions
 
-The H1 heading contains an link to the landing page.
+The H1 heading contains a link to the landing page.
 
 ![Landing Page](docs/readme-images/landing_page.webp)
 
