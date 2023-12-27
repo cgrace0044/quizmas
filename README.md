@@ -166,7 +166,7 @@ Desktop Lighthouse Score
 
 ### Browser Testing
 
-- The Website was tested on Google Chrome, Firefox, Microsoft Edge, Safari browsers with no issues noted.
+- The Website was tested on Google Chrome, Firefox, Brave, Safari browsers with no issues noted.
 
 ### Device Testing
 
