@@ -1,4 +1,4 @@
-// questions for the quiz - question plus four possible answers for each
+// question bank for the quiz - question plus four possible answers for each
 let questions = [];
 const questionsBank = [
     {
@@ -563,7 +563,6 @@ startButton.addEventListener('click', runGame);
 // Calls to open instructions
 instructionsButton.addEventListener("click", openInstructions);
 
-
 /** Opens and hides
  * instructions */
 function openInstructions() {
@@ -598,8 +597,8 @@ function runGame() {
     score = incorrect = 0;
     currentQuestionIndex = -1;
 
-    // shuffle questions
-    questions = questionsBank.sort(() => Math.random() - 0.5);
+    // shuffle questions and randomly select 20 questions from 60
+    questions = questionsBank.sort(() => Math.random() - 0.5).slice(0, 20);
 
     displayCurrentScore();
     nextQuestion();
@@ -660,7 +659,7 @@ function gameOver() {
 
     // show the start button
     startButton.classList.remove('hidden');
-    // but show it now as "Restart"
+    // but show it now as "Gameover Restart"
     startButton.innerText = 'Gameover Restart?';
 
     // hide questionArea again
@@ -691,6 +690,7 @@ function onClickedCorrectButton() {
     }, 2000);
 }
 
+// display correct answer - even if incorrect button is clicked - function is called in onClickedIncorrectButton below
 function displayCorrectAnswer() {
     // current question variable
     const currentQuestion = questions[currentQuestionIndex];

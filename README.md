@@ -1,6 +1,6 @@
 # Quizmas
 
-Quizmas is a multiple choice 2023 general knowledge quiz for adults to play over Christmas. There are 60 questions and the aim of the game is to get as many questions correct as possible. The game is designed to be fun and engaging.
+Quizmas is a multiple choice 2023 general knowledge quiz for adults to play over Christmas. 20 questions are randomly selected from a question bank of 60. The aim of the game is to get as many questions correct as possible. The game is designed to be fun and engaging.
 
 This game is a great way to improve your knowledge of 2023 current affairs.
 
@@ -8,11 +8,11 @@ The live link can be found here - [Quizmas](https://cgrace0044.github.io/quizmas
 
 How the game appears on multiple devices can be seen below. The first picture shows the homescreen and the second the quiz-screen:
 
-### Homescreen
+#### Homescreen
 
 ![Quizmas Am I Responsive Image Homepage](docs/readme-images/amiresponsive_homescreen.webp)
 
-### Quiz-screen
+#### Quiz-screen
 
 ![Quizmas Am I Responsive Image Quiz-page](docs/readme-images/amiresponsive_quiz.webp)
 
@@ -95,13 +95,17 @@ If the user clicks the "Instructions" button the user can read the main rules of
 - A 'Math Random' function was used so that the questions are shuffled.
 - The order of the answers to a corresponding question are also shuffled so that it is more difficult to memorise answers.
 
+#### Game Area Large Screens
+
 ![Quiz Screen Large Screens](docs/readme-images/quiz_screen_largerscreens.webp)
+
+#### Game Area Small Screens
 
 ![Quiz Screen Smaller Screens](docs/readme-images/quiz_screen_smallerscreens.webp)
 
 ### Game Over
 
-- Once the player has answered 60 questions the Gameover screen will be displayed.
+- Once the player has answered 20 questions the Gameover screen will be displayed.
 - This screen simply states 'gameover' and there is an opportunity to restart the game.
 - The final tally of correct and incorrect answers is also shown on this screen.
 
@@ -112,6 +116,7 @@ If the user clicks the "Instructions" button the user can read the main rules of
 - Ability for the user to input a username
 - A leaderboard
 - In the future it would be good to have different quiz subjects e.g. geogrpahy, history etc.
+- A timer so that the user only has a fixed amount of time to answer each question.
   
 ## Testing
 
@@ -152,11 +157,12 @@ Desktop Lighthouse Score
 - The game was thoroughly tested by friends and family to ensure that everything worked as intended including the following:
   - Questions were shuffled so that they don't appear in the same order.
   - Answers to each corresponding questions were shuffled.
-  - The game ends once 60 questions have been answered.
+  - The game ends once 20 questions have been answered.
   - The user can only select one answer to each question.
-  - The total correct and incorrect scores sum to 60 at the end of the game.
+  - The total correct and incorrect scores sum to 20 at the end of the game.
   - The next question is automatically displayed once the user has clicked an answer. There is a short timelag of two seconds.
   - Once the game is finished there is an opportunity to restart the game.
+  - Following feedback from users if the incorrect answer is selected the correct answer shows up as green and the incorrect as red.
 
 ### Browser Testing
 
@@ -183,6 +189,14 @@ Desktop Lighthouse Score
 - For some time there was an issue where the next question function appended its answers along with the answers of the previous question.
 - This meant eight answers were showing - four of which were irrelevant to the current question.
 - In order to fix this I had to empty the answers' previous HTML using answerButtons.innerHTML = ''.
+
+#### Length of quiz
+
+- Originally the quiz showed all 60 questions in one game.
+- This meant the game was very long and playing the game for a second time was boring.
+- Within the runGame function on the shuffle question line I added the following code so that only 20 questions are displayed in each game: .slice(0, 20);.
+- This makes it more interesting to play the game multiple times.
+- I could add to the question bank in the future so that users could play the game even more times.
 
 ### Known Bugs
 
