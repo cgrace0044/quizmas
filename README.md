@@ -32,7 +32,7 @@ How the game appears on multiple devices can be seen below. The first picture sh
 
 - ### Returning User
 
-  - As a returning user I want to be able to play the same game but with the questions in a different order.
+  - As a returning user I want to be able to play the game again with another randomly generated 20 questions from the question bank.
   - As a returning user I want to be able to improve on my previous score.
 
 ## Design and Colour Scheme
@@ -115,19 +115,19 @@ If the user clicks the "Instructions" button the user can read the main rules of
 
 - Ability for the user to input a username
 - A leaderboard
-- In the future it would be good to have different quiz subjects e.g. geogrpahy, history etc.
+- In the future it would be good to have different quiz subjects e.g. geography, history etc.
 - A timer so that the user only has a fixed amount of time to answer each question.
   
 ## Testing
 
 ### Validator Testing
 
-HTML
+#### HTML
 
 - No errors were returned when passing through the official W3C Markup Validator
 - [W3C Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcgrace0044.github.io%2Fquizmas%2Findex.html)
 
-CSS
+#### CSS
 
 - No errors were found when passing through the official W3C CSS Validator
 - [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcgrace0044.github.io%2Fquizmas%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
@@ -171,6 +171,8 @@ Desktop Lighthouse Score
 ### Device Testing
 
 - The website was viewed on a variety of devices such as Desktop, Laptop, mobile and tablet to ensure responsiveness on various screen sizes in both portrait and landscape mode. The website performed as intended. The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes.
+I also used the following website to test responsiveness:
+    - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fcgrace0044.github.io%2Fquizmas%2F)
 
 ### Fixed Bugs
 
@@ -261,7 +263,7 @@ The quiz questions came from various 2023 quizzes that I found online including:
 - [W3Schools](https://www.w3schools.com/)  
 - [Stack Overflow](https://stackoverflow.com/)
 - I watched a number of videos on Youtube in relation to creating a quiz using HTML, CSS and Javascript including:
-  - Web Deb Simplified [Build a Quiz With Javascript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1317s).
+  - Web Dev Simplified [Build a Quiz With Javascript](https://www.youtube.com/watch?v=riDzcEQbX6k&t=1317s).
   - James Q Quick [Build a Quiz App](https://www.youtube.com/watch?v=rFWbAj40JrQ&list=PLB6wlEeCDJ5Yyh6P2N6Q_9JijB6v4UejF).
   - Great Stack [How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=357s).
 - I used similar code to The Code Institute Love Maths Project for setting up the game-area and also the score area.
