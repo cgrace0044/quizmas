@@ -125,17 +125,17 @@ If the user clicks the "Instructions" button the user can read the main rules of
 HTML
 
 - No errors were returned when passing through the official W3C Markup Validator
-INPUT SCREENSHOT HERE
+- [W3C Validator Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcgrace0044.github.io%2Fquizmas%2Findex.html)
 
 CSS
 
 - No errors were found when passing through the official W3C CSS Validator
-INPUT SCREENSHOT HERE
+- [W3C CSS Validator Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcgrace0044.github.io%2Fquizmas%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
   
 Javascript
 
-- No errors or warnings were returned.
-INPUT SCREENSHOT HERE
+- No errors were returned in JSHint.
+![JSHint Validator Results](docs/readme-images/jshint.webp)
 
 ### Accessibility
 
